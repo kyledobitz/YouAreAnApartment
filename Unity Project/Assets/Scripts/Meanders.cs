@@ -85,7 +85,7 @@ public class Meanders : MonoBehaviour {
     }
 
     void Move(){
-        heading = (destination - gameObject.transform.position).normalized;
+        heading = (destination - transform.position).normalized;
         transform.forward = heading;
         velocity = heading * speed;
         transform.position += Time.deltaTime*velocity;
