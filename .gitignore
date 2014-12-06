@@ -11,14 +11,14 @@ sysinfo.txt
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 [Ee]xported[Oo]bj/
-/*.userprefs
-/*.csproj
-/*.pidb
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
+Unity\ Project/*.userprefs
+Unity\ Project/*.csproj
+Unity\ Project/*.pidb
+Unity\ Project/*.suo
+Unity\ Project/*.sln*
+Unity\ Project/*.user
+Unity\ Project/*.unityproj
+Unity\ Project/*.booproj
  
 # ============ #
 # OS generated #
