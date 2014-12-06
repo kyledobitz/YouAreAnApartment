@@ -43,13 +43,15 @@ public class Meanders : MonoBehaviour {
         switch (state)
         {
             case State.STANDING:
-                if(Time.time > nextDecisionTime)
+                if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
                     state = DecideNextState();
+                }
                 break;
             case State.MEANDERING:
-                if((transform.position - destination).magnitude < 0.01f)
+                if((transform.position - destination).magnitude < 0.01f){
                     state = State.STANDING;
+                }
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
                     Debug.Log("new decision time: " + nextDecisionTime);
