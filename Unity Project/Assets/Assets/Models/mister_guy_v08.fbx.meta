@@ -1,0 +1,1045 @@
+fileFormatVersion: 2
+guid: 76fe54527544c4e61a1bd958a12ba3d3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: Backpack
+    100006: Backpack_Strap
+    100008: Backpack_Strap_1
+    100010: Backpack_Strap_1_2
+    100012: Bedroll
+    100014: Bedroll_Strap
+    100016: Belt
+    100018: Bend
+    100020: Bend_2
+    100022: Calve
+    100024: Calve_2
+    100026: Collar
+    100028: Cube
+    100030: Cube_1
+    100032: Cube_1_2
+    100034: Cube_2
+    100036: Eye_L
+    100038: Eye_R
+    100040: Eyes
+    100042: Finger_Digit_1
+    100044: Finger_Digit_1_2
+    100046: Finger_Digit_1_3
+    100048: Forearm
+    100050: Forearm_2
+    100052: Hand
+    100054: Hand_2
+    100056: Head
+    100058: Hips
+    100060: INDEX_DIGIT_1
+    100062: INDEX_DIGIT_1_2
+    100064: INDEX_DIGIT_2
+    100066: INDEX_DIGIT_2_2
+    100068: Lace
+    100070: Lace_1
+    100072: Lace_1_2
+    100074: Lace_1_3
+    100076: Lace_1_4
+    100078: Lace_2
+    100080: Lace_2_2
+    100082: Lace_2_3
+    100084: Lace_2_4
+    100086: Lace_2_5
+    100088: Lace_3
+    100090: Lace_4
+    100092: Lace_5
+    100094: Lace_6
+    100096: Lace_7
+    100098: Lace_8
+    100100: Left_STrap
+    100102: Leg_L
+    100104: Leg_R
+    100106: Metal_Clasp
+    100108: Metal_Clasp_1
+    100110: Metal_Clasp_1_2
+    100112: Metal_Clasp_2
+    100114: Metal_Clasp_3
+    100116: Metal_Clasp_4
+    100118: MIDDLE_DIGIT_1
+    100120: MIDDLE_DIGIT_1_2
+    100122: MIDDLE_DIGIT_2
+    100124: MIDDLE_DIGIT_2_2
+    100126: //RootNode
+    100128: PINKY_DIGIT_1
+    100130: PINKY_DIGIT_1_2
+    100132: PINKY_DIGIT_2
+    100134: PINKY_DIGIT_2_2
+    100136: Right_STrap
+    100138: Shoe
+    100140: Shoe_2
+    100142: Shoe_3
+    100144: Shoe_4
+    100146: Shoulder_Pad_L
+    100148: Shoulder_Pad_R
+    100150: Shoulders
+    100152: Strap
+    100154: Strap_2
+    100156: Strap_3
+    100158: Strap_4
+    100160: Strap_5
+    100162: Strap_6
+    100164: Strap_7
+    100166: Strap_8
+    100168: Straps
+    100170: Sweep_NURBS
+    100172: Sweep_NURBS_1
+    100174: Thumb
+    100176: Torso
+    400000: Arm_L
+    400002: Arm_R
+    400004: Backpack
+    400006: Backpack_Strap
+    400008: Backpack_Strap_1
+    400010: Backpack_Strap_1_2
+    400012: Bedroll
+    400014: Bedroll_Strap
+    400016: Belt
+    400018: Bend
+    400020: Bend_2
+    400022: Calve
+    400024: Calve_2
+    400026: Collar
+    400028: Cube
+    400030: Cube_1
+    400032: Cube_1_2
+    400034: Cube_2
+    400036: Eye_L
+    400038: Eye_R
+    400040: Eyes
+    400042: Finger_Digit_1
+    400044: Finger_Digit_1_2
+    400046: Finger_Digit_1_3
+    400048: Forearm
+    400050: Forearm_2
+    400052: Hand
+    400054: Hand_2
+    400056: Head
+    400058: Hips
+    400060: INDEX_DIGIT_1
+    400062: INDEX_DIGIT_1_2
+    400064: INDEX_DIGIT_2
+    400066: INDEX_DIGIT_2_2
+    400068: Lace
+    400070: Lace_1
+    400072: Lace_1_2
+    400074: Lace_1_3
+    400076: Lace_1_4
+    400078: Lace_2
+    400080: Lace_2_2
+    400082: Lace_2_3
+    400084: Lace_2_4
+    400086: Lace_2_5
+    400088: Lace_3
+    400090: Lace_4
+    400092: Lace_5
+    400094: Lace_6
+    400096: Lace_7
+    400098: Lace_8
+    400100: Left_STrap
+    400102: Leg_L
+    400104: Leg_R
+    400106: Metal_Clasp
+    400108: Metal_Clasp_1
+    400110: Metal_Clasp_1_2
+    400112: Metal_Clasp_2
+    400114: Metal_Clasp_3
+    400116: Metal_Clasp_4
+    400118: MIDDLE_DIGIT_1
+    400120: MIDDLE_DIGIT_1_2
+    400122: MIDDLE_DIGIT_2
+    400124: MIDDLE_DIGIT_2_2
+    400126: //RootNode
+    400128: PINKY_DIGIT_1
+    400130: PINKY_DIGIT_1_2
+    400132: PINKY_DIGIT_2
+    400134: PINKY_DIGIT_2_2
+    400136: Right_STrap
+    400138: Shoe
+    400140: Shoe_2
+    400142: Shoe_3
+    400144: Shoe_4
+    400146: Shoulder_Pad_L
+    400148: Shoulder_Pad_R
+    400150: Shoulders
+    400152: Strap
+    400154: Strap_2
+    400156: Strap_3
+    400158: Strap_4
+    400160: Strap_5
+    400162: Strap_6
+    400164: Strap_7
+    400166: Strap_8
+    400168: Straps
+    400170: Sweep_NURBS
+    400172: Sweep_NURBS_1
+    400174: Thumb
+    400176: Torso
+    2300000: Arm_L
+    2300002: Arm_R
+    2300004: Backpack
+    2300006: Backpack_Strap
+    2300008: Backpack_Strap_1
+    2300010: Backpack_Strap_1_2
+    2300012: Bedroll
+    2300014: Bedroll_Strap
+    2300016: Calve
+    2300018: Calve_2
+    2300020: Collar
+    2300022: Cube
+    2300024: Cube_1
+    2300026: Cube_1_2
+    2300028: Cube_2
+    2300030: Eye_L
+    2300032: Eye_R
+    2300034: Finger_Digit_1
+    2300036: Finger_Digit_1_2
+    2300038: Finger_Digit_1_3
+    2300040: Forearm
+    2300042: Forearm_2
+    2300044: Hand
+    2300046: Hand_2
+    2300048: Head
+    2300050: Hips
+    2300052: INDEX_DIGIT_1
+    2300054: INDEX_DIGIT_1_2
+    2300056: INDEX_DIGIT_2
+    2300058: INDEX_DIGIT_2_2
+    2300060: Lace_1_2
+    2300062: Lace_1_4
+    2300064: Lace_2_2
+    2300066: Lace_2_3
+    2300068: Lace_2_5
+    2300070: Lace_4
+    2300072: Lace_6
+    2300074: Lace_8
+    2300076: Leg_L
+    2300078: Leg_R
+    2300080: Metal_Clasp
+    2300082: Metal_Clasp_1
+    2300084: Metal_Clasp_1_2
+    2300086: Metal_Clasp_2
+    2300088: Metal_Clasp_3
+    2300090: Metal_Clasp_4
+    2300092: MIDDLE_DIGIT_1
+    2300094: MIDDLE_DIGIT_1_2
+    2300096: MIDDLE_DIGIT_2
+    2300098: MIDDLE_DIGIT_2_2
+    2300100: PINKY_DIGIT_1
+    2300102: PINKY_DIGIT_1_2
+    2300104: PINKY_DIGIT_2
+    2300106: PINKY_DIGIT_2_2
+    2300108: Shoe_2
+    2300110: Shoe_4
+    2300112: Strap_2
+    2300114: Strap_4
+    2300116: Strap_6
+    2300118: Strap_8
+    2300120: Sweep_NURBS
+    2300122: Sweep_NURBS_1
+    2300124: Thumb
+    2300126: Torso
+    3300000: Arm_L
+    3300002: Arm_R
+    3300004: Backpack
+    3300006: Backpack_Strap
+    3300008: Backpack_Strap_1
+    3300010: Backpack_Strap_1_2
+    3300012: Bedroll
+    3300014: Bedroll_Strap
+    3300016: Calve
+    3300018: Calve_2
+    3300020: Collar
+    3300022: Cube
+    3300024: Cube_1
+    3300026: Cube_1_2
+    3300028: Cube_2
+    3300030: Eye_L
+    3300032: Eye_R
+    3300034: Finger_Digit_1
+    3300036: Finger_Digit_1_2
+    3300038: Finger_Digit_1_3
+    3300040: Forearm
+    3300042: Forearm_2
+    3300044: Hand
+    3300046: Hand_2
+    3300048: Head
+    3300050: Hips
+    3300052: INDEX_DIGIT_1
+    3300054: INDEX_DIGIT_1_2
+    3300056: INDEX_DIGIT_2
+    3300058: INDEX_DIGIT_2_2
+    3300060: Lace_1_2
+    3300062: Lace_1_4
+    3300064: Lace_2_2
+    3300066: Lace_2_3
+    3300068: Lace_2_5
+    3300070: Lace_4
+    3300072: Lace_6
+    3300074: Lace_8
+    3300076: Leg_L
+    3300078: Leg_R
+    3300080: Metal_Clasp
+    3300082: Metal_Clasp_1
+    3300084: Metal_Clasp_1_2
+    3300086: Metal_Clasp_2
+    3300088: Metal_Clasp_3
+    3300090: Metal_Clasp_4
+    3300092: MIDDLE_DIGIT_1
+    3300094: MIDDLE_DIGIT_1_2
+    3300096: MIDDLE_DIGIT_2
+    3300098: MIDDLE_DIGIT_2_2
+    3300100: PINKY_DIGIT_1
+    3300102: PINKY_DIGIT_1_2
+    3300104: PINKY_DIGIT_2
+    3300106: PINKY_DIGIT_2_2
+    3300108: Shoe_2
+    3300110: Shoe_4
+    3300112: Strap_2
+    3300114: Strap_4
+    3300116: Strap_6
+    3300118: Strap_8
+    3300120: Sweep_NURBS
+    3300122: Sweep_NURBS_1
+    3300124: Thumb
+    3300126: Torso
+    4300000: Torso
+    4300002: Sweep_NURBS_1
+    4300004: Sweep_NURBS
+    4300006: Backpack
+    4300008: Bedroll
+    4300010: Backpack_Strap
+    4300012: Metal_Clasp_1
+    4300014: Backpack_Strap_1
+    4300016: Bedroll_Strap
+    4300018: Metal_Clasp_1_2
+    4300020: Backpack_Strap_1_2
+    4300022: Metal_Clasp
+    4300024: Strap_2
+    4300026: Collar
+    4300028: Metal_Clasp_2
+    4300030: Strap_4
+    4300032: Metal_Clasp_3
+    4300034: Strap_6
+    4300036: Metal_Clasp_4
+    4300038: Strap_8
+    4300040: Head
+    4300042: Eye_L
+    4300044: Eye_R
+    4300046: Arm_R
+    4300048: Forearm
+    4300050: Hand
+    4300052: Thumb
+    4300054: Finger_Digit_1
+    4300056: INDEX_DIGIT_1
+    4300058: INDEX_DIGIT_2
+    4300060: MIDDLE_DIGIT_1
+    4300062: MIDDLE_DIGIT_2
+    4300064: PINKY_DIGIT_1
+    4300066: PINKY_DIGIT_2
+    4300068: Cube_1
+    4300070: Cube
+    4300072: Arm_L
+    4300074: Forearm_2
+    4300076: Hand_2
+    4300078: Finger_Digit_1_3
+    4300080: Finger_Digit_1_2
+    4300082: INDEX_DIGIT_1_2
+    4300084: INDEX_DIGIT_2_2
+    4300086: MIDDLE_DIGIT_1_2
+    4300088: MIDDLE_DIGIT_2_2
+    4300090: PINKY_DIGIT_1_2
+    4300092: PINKY_DIGIT_2_2
+    4300094: Cube_1_2
+    4300096: Cube_2
+    4300098: Hips
+    4300100: Leg_R
+    4300102: Calve
+    4300104: Shoe_2
+    4300106: Lace_1_2
+    4300108: Lace_2_2
+    4300110: Lace_2_3
+    4300112: Lace_4
+    4300114: Leg_L
+    4300116: Calve_2
+    4300118: Shoe_4
+    4300120: Lace_1_4
+    4300122: Lace_2_5
+    4300124: Lace_6
+    4300126: Lace_8
+    7400000: Idle
+    7400002: Stab
+    7400004: Run
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Backpack
+        weight: 1
+      - path: Torso/Backpack/Bedroll
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Metal_Clasp_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Backpack_Strap_1_2
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Bedroll_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Metal_Clasp_1_2
+        weight: 1
+      - path: Torso/Backpack/Strap
+        weight: 1
+      - path: Torso/Backpack/Strap/Metal_Clasp
+        weight: 1
+      - path: Torso/Backpack/Strap/Strap_2
+        weight: 1
+      - path: Torso/Belt
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS_1
+        weight: 1
+      - path: Torso/Collar
+        weight: 1
+      - path: Torso/Head
+        weight: 1
+      - path: Torso/Head/Eyes
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_L
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_R
+        weight: 1
+      - path: Torso/Hips
+        weight: 1
+      - path: Torso/Hips/Leg_L
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Bend_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3/Lace_1_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4/Lace_2_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5/Lace_6
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7/Lace_8
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Shoe_4
+        weight: 1
+      - path: Torso/Hips/Leg_R
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Bend
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace/Lace_2_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1/Lace_1_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2/Lace_2_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3/Lace_4
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Shoe_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3/Finger_Digit_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2/INDEX_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2/MIDDLE_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2/PINKY_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1/INDEX_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1/MIDDLE_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1/PINKY_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb/Finger_Digit_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube_1
+        weight: 1
+      - path: Torso/Shoulders
+        weight: 1
+      - path: Torso/Straps
+        weight: 1
+      - path: Torso/Straps/Strap_3
+        weight: 1
+      - path: Torso/Straps/Strap_3/Metal_Clasp_2
+        weight: 1
+      - path: Torso/Straps/Strap_3/Strap_4
+        weight: 1
+      - path: Torso/Straps/Strap_5
+        weight: 1
+      - path: Torso/Straps/Strap_5/Metal_Clasp_3
+        weight: 1
+      - path: Torso/Straps/Strap_5/Strap_6
+        weight: 1
+      - path: Torso/Straps/Strap_7
+        weight: 1
+      - path: Torso/Straps/Strap_7/Metal_Clasp_4
+        weight: 1
+      - path: Torso/Straps/Strap_7/Strap_8
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Stab
+      takeName: C4D Animation Take
+      firstFrame: 90
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Backpack
+        weight: 1
+      - path: Torso/Backpack/Bedroll
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Metal_Clasp_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Backpack_Strap_1_2
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Bedroll_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Metal_Clasp_1_2
+        weight: 1
+      - path: Torso/Backpack/Strap
+        weight: 1
+      - path: Torso/Backpack/Strap/Metal_Clasp
+        weight: 1
+      - path: Torso/Backpack/Strap/Strap_2
+        weight: 1
+      - path: Torso/Belt
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS_1
+        weight: 1
+      - path: Torso/Collar
+        weight: 1
+      - path: Torso/Head
+        weight: 1
+      - path: Torso/Head/Eyes
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_L
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_R
+        weight: 1
+      - path: Torso/Hips
+        weight: 1
+      - path: Torso/Hips/Leg_L
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Bend_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3/Lace_1_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4/Lace_2_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5/Lace_6
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7/Lace_8
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Shoe_4
+        weight: 1
+      - path: Torso/Hips/Leg_R
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Bend
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace/Lace_2_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1/Lace_1_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2/Lace_2_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3/Lace_4
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Shoe_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3/Finger_Digit_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2/INDEX_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2/MIDDLE_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2/PINKY_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1/INDEX_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1/MIDDLE_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1/PINKY_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb/Finger_Digit_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube_1
+        weight: 1
+      - path: Torso/Shoulders
+        weight: 1
+      - path: Torso/Straps
+        weight: 1
+      - path: Torso/Straps/Strap_3
+        weight: 1
+      - path: Torso/Straps/Strap_3/Metal_Clasp_2
+        weight: 1
+      - path: Torso/Straps/Strap_3/Strap_4
+        weight: 1
+      - path: Torso/Straps/Strap_5
+        weight: 1
+      - path: Torso/Straps/Strap_5/Metal_Clasp_3
+        weight: 1
+      - path: Torso/Straps/Strap_5/Strap_6
+        weight: 1
+      - path: Torso/Straps/Strap_7
+        weight: 1
+      - path: Torso/Straps/Strap_7/Metal_Clasp_4
+        weight: 1
+      - path: Torso/Straps/Strap_7/Strap_8
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: C4D Animation Take
+      firstFrame: 110
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Backpack
+        weight: 1
+      - path: Torso/Backpack/Bedroll
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Backpack_Strap_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Left_STrap/Metal_Clasp_1
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Backpack_Strap_1_2
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Bedroll_Strap
+        weight: 1
+      - path: Torso/Backpack/Bedroll/Right_STrap/Metal_Clasp_1_2
+        weight: 1
+      - path: Torso/Backpack/Strap
+        weight: 1
+      - path: Torso/Backpack/Strap/Metal_Clasp
+        weight: 1
+      - path: Torso/Backpack/Strap/Strap_2
+        weight: 1
+      - path: Torso/Belt
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS
+        weight: 1
+      - path: Torso/Belt/Sweep_NURBS_1
+        weight: 1
+      - path: Torso/Collar
+        weight: 1
+      - path: Torso/Head
+        weight: 1
+      - path: Torso/Head/Eyes
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_L
+        weight: 1
+      - path: Torso/Head/Eyes/Eye_R
+        weight: 1
+      - path: Torso/Hips
+        weight: 1
+      - path: Torso/Hips/Leg_L
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Bend_2
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_1_3/Lace_1_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_2_4/Lace_2_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_5/Lace_6
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Lace_7/Lace_8
+        weight: 1
+      - path: Torso/Hips/Leg_L/Calve_2/Shoe_3/Shoe_4
+        weight: 1
+      - path: Torso/Hips/Leg_R
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Bend
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace/Lace_2_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_1/Lace_1_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_2/Lace_2_2
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Lace_3/Lace_4
+        weight: 1
+      - path: Torso/Hips/Leg_R/Calve/Shoe/Shoe_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/Finger_Digit_1_3/Finger_Digit_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/INDEX_DIGIT_1_2/INDEX_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/MIDDLE_DIGIT_1_2/MIDDLE_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Arm_L/Forearm_2/Hand_2/PINKY_DIGIT_1_2/PINKY_DIGIT_2_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_1_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_L/Cube_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/INDEX_DIGIT_1/INDEX_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/MIDDLE_DIGIT_1/MIDDLE_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/PINKY_DIGIT_1/PINKY_DIGIT_2
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Arm_R/Forearm/Hand/Thumb/Finger_Digit_1
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube
+        weight: 1
+      - path: Torso/Shoulder_Pad_R/Cube_1
+        weight: 1
+      - path: Torso/Shoulders
+        weight: 1
+      - path: Torso/Straps
+        weight: 1
+      - path: Torso/Straps/Strap_3
+        weight: 1
+      - path: Torso/Straps/Strap_3/Metal_Clasp_2
+        weight: 1
+      - path: Torso/Straps/Strap_3/Strap_4
+        weight: 1
+      - path: Torso/Straps/Strap_5
+        weight: 1
+      - path: Torso/Straps/Strap_5/Metal_Clasp_3
+        weight: 1
+      - path: Torso/Straps/Strap_5/Strap_6
+        weight: 1
+      - path: Torso/Straps/Strap_7
+        weight: 1
+      - path: Torso/Straps/Strap_7/Metal_Clasp_4
+        weight: 1
+      - path: Torso/Straps/Strap_7/Strap_8
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
