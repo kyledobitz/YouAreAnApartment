@@ -3,11 +3,10 @@ using System.Collections;
 
 public class ScaredyCat : MonoBehaviour
 {
-
-    public float fearDecrementAmount = 1.0;
-    static float _totalFear = 0.0;
-    float _fear = 0.0;
-    public float fearFactor = 1.0;
+    public float fearDecrementAmount = 1f;
+    static float _totalFear = 0f;
+    float _fear = 0f;
+    public float fearFactor = 1f;
 
     public static float totalFear { get { return totalFear; } }
 
@@ -18,8 +17,8 @@ public class ScaredyCat : MonoBehaviour
         float fright = scariness * fearFactor;
         _fear += fright;
         fearFactor += fright;
-        if (fearFactor < 0)
-            fearFactor = 0;
+        if (fearFactor < 0f)
+            fearFactor = 0f;
     }
 
     // Use this for initialization
