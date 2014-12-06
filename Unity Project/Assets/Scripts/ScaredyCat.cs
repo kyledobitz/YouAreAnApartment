@@ -7,7 +7,7 @@ public class ScaredyCat : MonoBehaviour
     float _fear = 0f;
     public float fearFactor = 1f;
 
-    public static float totalFear { get { return totalFear; } }
+    public static float totalFear { get { return _totalFear; } }
 
     public float fear{ get { return _fear; } }
 
