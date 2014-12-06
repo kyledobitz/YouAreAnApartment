@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Meanders.cs" />
      <Compile Include="Assets\Scripts\ScaredyCat.cs" />
      <None Include="Assets\TransparentGlow.shader" />
  <Reference Include="UnityEngine.UI">

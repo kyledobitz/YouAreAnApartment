@@ -4,18 +4,18 @@ using System.Collections;
 public class ScaredyCat : MonoBehaviour
 {
 
-    public double fearDecrementAmount = 1.0;
-    static double _totalFear = 0.0;
-    double _fear = 0.0;
-    public double fearFactor = 1.0;
+    public float fearDecrementAmount = 1.0;
+    static float _totalFear = 0.0;
+    float _fear = 0.0;
+    public float fearFactor = 1.0;
 
-    public static double totalFear { get { return totalFear; } }
+    public static float totalFear { get { return totalFear; } }
 
-    public double fear{ get { return _fear; } }
+    public float fear{ get { return _fear; } }
 
-    public void beScared(double scariness)
+    public void beScared(float scariness)
     {
-        double fright = scariness * fearFactor;
+        float fright = scariness * fearFactor;
         _fear += fright;
         fearFactor += fright;
         if (fearFactor < 0)
