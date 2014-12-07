@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class Meanders : MonoBehaviour {
 
     public GameObject[] doorways;
@@ -43,13 +44,15 @@ public class Meanders : MonoBehaviour {
         switch (state)
         {
             case State.STANDING:
-                if(Time.time > nextDecisionTime)
+                if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
                     state = DecideNextState();
+                }
                 break;
             case State.MEANDERING:
-                if((transform.position - destination).magnitude < 0.01f)
+                if((transform.position - destination).magnitude < 0.01f){
                     state = State.STANDING;
+                }
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
                     Debug.Log("new decision time: " + nextDecisionTime);
@@ -67,7 +70,10 @@ public class Meanders : MonoBehaviour {
 
     State DecideNextState(){
         if (Random.value < standVsMeanderPercent)
+        {
+            audio.Play();
             return State.STANDING;
+        }
         else 
             ChooseMeanderDestination();
             return State.MEANDERING;
@@ -83,7 +89,7 @@ public class Meanders : MonoBehaviour {
     }
 
     void Move(){
-        heading = (destination - gameObject.transform.position).normalized;
+        heading = (destination - transform.position).normalized;
         transform.forward = heading;
         velocity = heading * speed;
         transform.position += Time.deltaTime*velocity;
