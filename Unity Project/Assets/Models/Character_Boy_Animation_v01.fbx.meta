@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: 7b9a08d5eea2b44d796081e7aa50df71
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: eye
+    100004: eye_2
+    100006: forearm
+    100008: forearm_2
+    100010: hair
+    100012: Head
+    100014: Left_Arm
+    100016: Left_Leg
+    100018: mouth
+    100020: Right_Arm
+    100022: Right_Leg
+    100024: shin
+    100026: shin_2
+    100028: Torso
+    400000: //RootNode
+    400002: eye
+    400004: eye_2
+    400006: forearm
+    400008: forearm_2
+    400010: hair
+    400012: Head
+    400014: Left_Arm
+    400016: Left_Leg
+    400018: mouth
+    400020: Right_Arm
+    400022: Right_Leg
+    400024: shin
+    400026: shin_2
+    400028: Torso
+    2300000: eye
+    2300002: eye_2
+    2300004: forearm
+    2300006: forearm_2
+    2300008: hair
+    2300010: Head
+    2300012: Left_Arm
+    2300014: Left_Leg
+    2300016: mouth
+    2300018: Right_Arm
+    2300020: Right_Leg
+    2300022: shin
+    2300024: shin_2
+    2300026: Torso
+    3300000: eye
+    3300002: eye_2
+    3300004: forearm
+    3300006: forearm_2
+    3300008: hair
+    3300010: Head
+    3300012: Left_Arm
+    3300014: Left_Leg
+    3300016: mouth
+    3300018: Right_Arm
+    3300020: Right_Leg
+    3300022: shin
+    3300024: shin_2
+    3300026: Torso
+    4300000: Head
+    4300002: mouth
+    4300004: eye
+    4300006: eye_2
+    4300008: hair
+    4300010: Torso
+    4300012: Left_Arm
+    4300014: forearm
+    4300016: Right_Arm
+    4300018: forearm_2
+    4300020: Right_Leg
+    4300022: shin
+    4300024: Left_Leg
+    4300026: shin_2
+    7400000: Walk
+    7400002: Run
+    7400004: Jump
+    7400006: Curious
+    7400008: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: C4D Animation Take
+      firstFrame: 30
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/eye
+        weight: 1
+      - path: Head/eye_2
+        weight: 1
+      - path: Head/hair
+        weight: 1
+      - path: Head/mouth
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Left_Arm
+        weight: 1
+      - path: Torso/Left_Arm/forearm
+        weight: 1
+      - path: Torso/Left_Leg
+        weight: 1
+      - path: Torso/Left_Leg/shin_2
+        weight: 1
+      - path: Torso/Right_Arm
+        weight: 1
+      - path: Torso/Right_Arm/forearm_2
+        weight: 1
+      - path: Torso/Right_Leg
+        weight: 1
+      - path: Torso/Right_Leg/shin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: C4D Animation Take
+      firstFrame: 100
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/eye
+        weight: 1
+      - path: Head/eye_2
+        weight: 1
+      - path: Head/hair
+        weight: 1
+      - path: Head/mouth
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Left_Arm
+        weight: 1
+      - path: Torso/Left_Arm/forearm
+        weight: 1
+      - path: Torso/Left_Leg
+        weight: 1
+      - path: Torso/Left_Leg/shin_2
+        weight: 1
+      - path: Torso/Right_Arm
+        weight: 1
+      - path: Torso/Right_Arm/forearm_2
+        weight: 1
+      - path: Torso/Right_Leg
+        weight: 1
+      - path: Torso/Right_Leg/shin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: C4D Animation Take
+      firstFrame: 150
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/eye
+        weight: 1
+      - path: Head/eye_2
+        weight: 1
+      - path: Head/hair
+        weight: 1
+      - path: Head/mouth
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Left_Arm
+        weight: 1
+      - path: Torso/Left_Arm/forearm
+        weight: 1
+      - path: Torso/Left_Leg
+        weight: 1
+      - path: Torso/Left_Leg/shin_2
+        weight: 1
+      - path: Torso/Right_Arm
+        weight: 1
+      - path: Torso/Right_Arm/forearm_2
+        weight: 1
+      - path: Torso/Right_Leg
+        weight: 1
+      - path: Torso/Right_Leg/shin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Curious
+      takeName: C4D Animation Take
+      firstFrame: 180
+      lastFrame: 236
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/eye
+        weight: 1
+      - path: Head/eye_2
+        weight: 1
+      - path: Head/hair
+        weight: 1
+      - path: Head/mouth
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Left_Arm
+        weight: 1
+      - path: Torso/Left_Arm/forearm
+        weight: 1
+      - path: Torso/Left_Leg
+        weight: 1
+      - path: Torso/Left_Leg/shin_2
+        weight: 1
+      - path: Torso/Right_Arm
+        weight: 1
+      - path: Torso/Right_Arm/forearm_2
+        weight: 1
+      - path: Torso/Right_Leg
+        weight: 1
+      - path: Torso/Right_Leg/shin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 161
+      lastFrame: 171
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Head/eye
+        weight: 1
+      - path: Head/eye_2
+        weight: 1
+      - path: Head/hair
+        weight: 1
+      - path: Head/mouth
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso/Left_Arm
+        weight: 1
+      - path: Torso/Left_Arm/forearm
+        weight: 1
+      - path: Torso/Left_Leg
+        weight: 1
+      - path: Torso/Left_Leg/shin_2
+        weight: 1
+      - path: Torso/Right_Arm
+        weight: 1
+      - path: Torso/Right_Arm/forearm_2
+        weight: 1
+      - path: Torso/Right_Leg
+        weight: 1
+      - path: Torso/Right_Leg/shin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

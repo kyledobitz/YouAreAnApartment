@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: lambert1
-  m_Shader: {fileID: 4800000, guid: f9d19c1dce1a0e84a8526e65e0e0686c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 71ede3cd29be0ab49b6062a2917bb9d9, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:

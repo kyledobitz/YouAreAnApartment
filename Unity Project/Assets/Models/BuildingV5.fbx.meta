@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 6888dd616a85444d985deb0a19cbf268
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BuildingFloor
+    100002: //RootNode
+    100004: CharacterRef
+    100006: DivingBoard
+    100008: Door
+    100010: Door1
+    100012: Door2
+    100014: Door3
+    100016: Door4
+    100018: Door5
+    100020: Door6
+    100022: Door7
+    100024: Door9
+    100026: Earth
+    100028: group
+    100030: Ladder
+    100032: pasted__pCube2
+    100034: pasted__pCube2 1
+    100036: pasted__pCube2 10
+    100038: pasted__pCube2 11
+    100040: pasted__pCube2 12
+    100042: pasted__pCube2 13
+    100044: pasted__pCube2 14
+    100046: pasted__pCube2 15
+    100048: pasted__pCube2 16
+    100050: pasted__pCube2 17
+    100052: pasted__pCube2 18
+    100054: pasted__pCube2 19
+    100056: pasted__pCube2 2
+    100058: pasted__pCube2 20
+    100060: pasted__pCube2 21
+    100062: pasted__pCube2 22
+    100064: pasted__pCube2 23
+    100066: pasted__pCube2 24
+    100068: pasted__pCube2 25
+    100070: pasted__pCube2 3
+    100072: pasted__pCube2 4
+    100074: pasted__pCube2 5
+    100076: pasted__pCube2 6
+    100078: pasted__pCube2 7
+    100080: pasted__pCube2 8
+    100082: pasted__pCube2 9
+    100084: pasted__pCube3
+    100086: pasted__pCube3 1
+    100088: pasted__pCube3 10
+    100090: pasted__pCube3 11
+    100092: pasted__pCube3 12
+    100094: pasted__pCube3 13
+    100096: pasted__pCube3 14
+    100098: pasted__pCube3 15
+    100100: pasted__pCube3 16
+    100102: pasted__pCube3 17
+    100104: pasted__pCube3 18
+    100106: pasted__pCube3 19
+    100108: pasted__pCube3 2
+    100110: pasted__pCube3 20
+    100112: pasted__pCube3 21
+    100114: pasted__pCube3 22
+    100116: pasted__pCube3 23
+    100118: pasted__pCube3 24
+    100120: pasted__pCube3 25
+    100122: pasted__pCube3 3
+    100124: pasted__pCube3 4
+    100126: pasted__pCube3 5
+    100128: pasted__pCube3 6
+    100130: pasted__pCube3 7
+    100132: pasted__pCube3 8
+    100134: pasted__pCube3 9
+    100136: pCube1
+    100138: polySurface1
+    100140: polySurface2
+    100142: polySurface3
+    100144: polySurface4
+    100146: polySurface5
+    100148: polySurface6
+    100150: polySurface7
+    100152: polySurface8
+    100154: Pool
+    100156: PoolToy1
+    100158: transform1
+    100160: transform2
+    100162: transform3
+    100164: Unit2
+    100166: Unit4
+    100168: Unit5
+    100170: Unit6
+    100172: Unit7
+    100174: Unit8
+    100176: Unit9
+    100178: Window1
+    100180: Window10
+    100182: Window11
+    100184: Window12
+    100186: Window13
+    100188: Window14
+    100190: Window15
+    100192: Window16
+    100194: Window17
+    100196: Window18
+    100198: Window19
+    100200: Window2
+    100202: Window20
+    100204: Window21
+    100206: Window22
+    100208: Window23
+    100210: Window24
+    100212: Window25
+    100214: Window26
+    100216: Window3
+    100218: Window4
+    100220: Window5
+    100222: Window6
+    100224: Window7
+    100226: Window8
+    100228: Window9
+    400000: BuildingFloor
+    400002: //RootNode
+    400004: CharacterRef
+    400006: DivingBoard
+    400008: Door
+    400010: Door1
+    400012: Door2
+    400014: Door3
+    400016: Door4
+    400018: Door5
+    400020: Door6
+    400022: Door7
+    400024: Door9
+    400026: Earth
+    400028: group
+    400030: Ladder
+    400032: pasted__pCube2
+    400034: pasted__pCube2 1
+    400036: pasted__pCube2 10
+    400038: pasted__pCube2 11
+    400040: pasted__pCube2 12
+    400042: pasted__pCube2 13
+    400044: pasted__pCube2 14
+    400046: pasted__pCube2 15
+    400048: pasted__pCube2 16
+    400050: pasted__pCube2 17
+    400052: pasted__pCube2 18
+    400054: pasted__pCube2 19
+    400056: pasted__pCube2 2
+    400058: pasted__pCube2 20
+    400060: pasted__pCube2 21
+    400062: pasted__pCube2 22
+    400064: pasted__pCube2 23
+    400066: pasted__pCube2 24
+    400068: pasted__pCube2 25
+    400070: pasted__pCube2 3
+    400072: pasted__pCube2 4
+    400074: pasted__pCube2 5
+    400076: pasted__pCube2 6
+    400078: pasted__pCube2 7
+    400080: pasted__pCube2 8
+    400082: pasted__pCube2 9
+    400084: pasted__pCube3
+    400086: pasted__pCube3 1
+    400088: pasted__pCube3 10
+    400090: pasted__pCube3 11
+    400092: pasted__pCube3 12
+    400094: pasted__pCube3 13
+    400096: pasted__pCube3 14
+    400098: pasted__pCube3 15
+    400100: pasted__pCube3 16
+    400102: pasted__pCube3 17
+    400104: pasted__pCube3 18
+    400106: pasted__pCube3 19
+    400108: pasted__pCube3 2
+    400110: pasted__pCube3 20
+    400112: pasted__pCube3 21
+    400114: pasted__pCube3 22
+    400116: pasted__pCube3 23
+    400118: pasted__pCube3 24
+    400120: pasted__pCube3 25
+    400122: pasted__pCube3 3
+    400124: pasted__pCube3 4
+    400126: pasted__pCube3 5
+    400128: pasted__pCube3 6
+    400130: pasted__pCube3 7
+    400132: pasted__pCube3 8
+    400134: pasted__pCube3 9
+    400136: pCube1
+    400138: polySurface1
+    400140: polySurface2
+    400142: polySurface3
+    400144: polySurface4
+    400146: polySurface5
+    400148: polySurface6
+    400150: polySurface7
+    400152: polySurface8
+    400154: Pool
+    400156: PoolToy1
+    400158: transform1
+    400160: transform2
+    400162: transform3
+    400164: Unit2
+    400166: Unit4
+    400168: Unit5
+    400170: Unit6
+    400172: Unit7
+    400174: Unit8
+    400176: Unit9
+    400178: Window1
+    400180: Window10
+    400182: Window11
+    400184: Window12
+    400186: Window13
+    400188: Window14
+    400190: Window15
+    400192: Window16
+    400194: Window17
+    400196: Window18
+    400198: Window19
+    400200: Window2
+    400202: Window20
+    400204: Window21
+    400206: Window22
+    400208: Window23
+    400210: Window24
+    400212: Window25
+    400214: Window26
+    400216: Window3
+    400218: Window4
+    400220: Window5
+    400222: Window6
+    400224: Window7
+    400226: Window8
+    400228: Window9
+    2300000: BuildingFloor
+    2300002: CharacterRef
+    2300004: DivingBoard
+    2300006: Door
+    2300008: Door1
+    2300010: Door2
+    2300012: Door3
+    2300014: Door4
+    2300016: Door5
+    2300018: Door6
+    2300020: Door7
+    2300022: Door9
+    2300024: Earth
+    2300026: Ladder
+    2300028: pasted__pCube2
+    2300030: pasted__pCube2 1
+    2300032: pasted__pCube2 10
+    2300034: pasted__pCube2 11
+    2300036: pasted__pCube2 12
+    2300038: pasted__pCube2 13
+    2300040: pasted__pCube2 14
+    2300042: pasted__pCube2 15
+    2300044: pasted__pCube2 16
+    2300046: pasted__pCube2 17
+    2300048: pasted__pCube2 18
+    2300050: pasted__pCube2 19
+    2300052: pasted__pCube2 2
+    2300054: pasted__pCube2 20
+    2300056: pasted__pCube2 21
+    2300058: pasted__pCube2 22
+    2300060: pasted__pCube2 23
+    2300062: pasted__pCube2 24
+    2300064: pasted__pCube2 25
+    2300066: pasted__pCube2 3
+    2300068: pasted__pCube2 4
+    2300070: pasted__pCube2 5
+    2300072: pasted__pCube2 6
+    2300074: pasted__pCube2 7
+    2300076: pasted__pCube2 8
+    2300078: pasted__pCube2 9
+    2300080: pasted__pCube3
+    2300082: pasted__pCube3 1
+    2300084: pasted__pCube3 10
+    2300086: pasted__pCube3 11
+    2300088: pasted__pCube3 12
+    2300090: pasted__pCube3 13
+    2300092: pasted__pCube3 14
+    2300094: pasted__pCube3 15
+    2300096: pasted__pCube3 16
+    2300098: pasted__pCube3 17
+    2300100: pasted__pCube3 18
+    2300102: pasted__pCube3 19
+    2300104: pasted__pCube3 2
+    2300106: pasted__pCube3 20
+    2300108: pasted__pCube3 21
+    2300110: pasted__pCube3 22
+    2300112: pasted__pCube3 23
+    2300114: pasted__pCube3 24
+    2300116: pasted__pCube3 25
+    2300118: pasted__pCube3 3
+    2300120: pasted__pCube3 4
+    2300122: pasted__pCube3 5
+    2300124: pasted__pCube3 6
+    2300126: pasted__pCube3 7
+    2300128: pasted__pCube3 8
+    2300130: pasted__pCube3 9
+    2300132: polySurface2
+    2300134: polySurface4
+    2300136: polySurface5
+    2300138: polySurface6
+    2300140: polySurface7
+    2300142: polySurface8
+    2300144: Pool
+    2300146: PoolToy1
+    2300148: Unit2
+    2300150: Unit4
+    2300152: Unit5
+    2300154: Unit6
+    2300156: Unit7
+    2300158: Unit8
+    2300160: Unit9
+    2300162: Window1
+    2300164: Window10
+    2300166: Window11
+    2300168: Window12
+    2300170: Window13
+    2300172: Window14
+    2300174: Window15
+    2300176: Window16
+    2300178: Window17
+    2300180: Window18
+    2300182: Window19
+    2300184: Window2
+    2300186: Window20
+    2300188: Window21
+    2300190: Window22
+    2300192: Window23
+    2300194: Window24
+    2300196: Window25
+    2300198: Window26
+    2300200: Window3
+    2300202: Window4
+    2300204: Window5
+    2300206: Window6
+    2300208: Window7
+    2300210: Window8
+    2300212: Window9
+    3300000: BuildingFloor
+    3300002: CharacterRef
+    3300004: DivingBoard
+    3300006: Door
+    3300008: Door1
+    3300010: Door2
+    3300012: Door3
+    3300014: Door4
+    3300016: Door5
+    3300018: Door6
+    3300020: Door7
+    3300022: Door9
+    3300024: Earth
+    3300026: Ladder
+    3300028: pasted__pCube2
+    3300030: pasted__pCube2 1
+    3300032: pasted__pCube2 10
+    3300034: pasted__pCube2 11
+    3300036: pasted__pCube2 12
+    3300038: pasted__pCube2 13
+    3300040: pasted__pCube2 14
+    3300042: pasted__pCube2 15
+    3300044: pasted__pCube2 16
+    3300046: pasted__pCube2 17
+    3300048: pasted__pCube2 18
+    3300050: pasted__pCube2 19
+    3300052: pasted__pCube2 2
+    3300054: pasted__pCube2 20
+    3300056: pasted__pCube2 21
+    3300058: pasted__pCube2 22
+    3300060: pasted__pCube2 23
+    3300062: pasted__pCube2 24
+    3300064: pasted__pCube2 25
+    3300066: pasted__pCube2 3
+    3300068: pasted__pCube2 4
+    3300070: pasted__pCube2 5
+    3300072: pasted__pCube2 6
+    3300074: pasted__pCube2 7
+    3300076: pasted__pCube2 8
+    3300078: pasted__pCube2 9
+    3300080: pasted__pCube3
+    3300082: pasted__pCube3 1
+    3300084: pasted__pCube3 10
+    3300086: pasted__pCube3 11
+    3300088: pasted__pCube3 12
+    3300090: pasted__pCube3 13
+    3300092: pasted__pCube3 14
+    3300094: pasted__pCube3 15
+    3300096: pasted__pCube3 16
+    3300098: pasted__pCube3 17
+    3300100: pasted__pCube3 18
+    3300102: pasted__pCube3 19
+    3300104: pasted__pCube3 2
+    3300106: pasted__pCube3 20
+    3300108: pasted__pCube3 21
+    3300110: pasted__pCube3 22
+    3300112: pasted__pCube3 23
+    3300114: pasted__pCube3 24
+    3300116: pasted__pCube3 25
+    3300118: pasted__pCube3 3
+    3300120: pasted__pCube3 4
+    3300122: pasted__pCube3 5
+    3300124: pasted__pCube3 6
+    3300126: pasted__pCube3 7
+    3300128: pasted__pCube3 8
+    3300130: pasted__pCube3 9
+    3300132: polySurface2
+    3300134: polySurface4
+    3300136: polySurface5
+    3300138: polySurface6
+    3300140: polySurface7
+    3300142: polySurface8
+    3300144: Pool
+    3300146: PoolToy1
+    3300148: Unit2
+    3300150: Unit4
+    3300152: Unit5
+    3300154: Unit6
+    3300156: Unit7
+    3300158: Unit8
+    3300160: Unit9
+    3300162: Window1
+    3300164: Window10
+    3300166: Window11
+    3300168: Window12
+    3300170: Window13
+    3300172: Window14
+    3300174: Window15
+    3300176: Window16
+    3300178: Window17
+    3300180: Window18
+    3300182: Window19
+    3300184: Window2
+    3300186: Window20
+    3300188: Window21
+    3300190: Window22
+    3300192: Window23
+    3300194: Window24
+    3300196: Window25
+    3300198: Window26
+    3300200: Window3
+    3300202: Window4
+    3300204: Window5
+    3300206: Window6
+    3300208: Window7
+    3300210: Window8
+    3300212: Window9
+    4300000: Window1
+    4300002: pasted__pCube2
+    4300004: pasted__pCube3
+    4300006: Window2
+    4300008: pasted__pCube2
+    4300010: pasted__pCube3
+    4300012: Window3
+    4300014: pasted__pCube2
+    4300016: pasted__pCube3
+    4300018: Window4
+    4300020: pasted__pCube2
+    4300022: pasted__pCube3
+    4300024: Window5
+    4300026: pasted__pCube2
+    4300028: pasted__pCube3
+    4300030: Window6
+    4300032: pasted__pCube2
+    4300034: pasted__pCube3
+    4300036: Window7
+    4300038: pasted__pCube2
+    4300040: pasted__pCube3
+    4300042: Window8
+    4300044: pasted__pCube2
+    4300046: pasted__pCube3
+    4300048: Window9
+    4300050: pasted__pCube2
+    4300052: pasted__pCube3
+    4300054: Window10
+    4300056: pasted__pCube2
+    4300058: pasted__pCube3
+    4300060: Window11
+    4300062: pasted__pCube2
+    4300064: pasted__pCube3
+    4300066: Window12
+    4300068: pasted__pCube2
+    4300070: pasted__pCube3
+    4300072: Window13
+    4300074: pasted__pCube2
+    4300076: pasted__pCube3
+    4300078: Window14
+    4300080: pasted__pCube2
+    4300082: pasted__pCube3
+    4300084: Window15
+    4300086: pasted__pCube2
+    4300088: pasted__pCube3
+    4300090: Window16
+    4300092: pasted__pCube2
+    4300094: pasted__pCube3
+    4300096: Window17
+    4300098: pasted__pCube2
+    4300100: pasted__pCube3
+    4300102: Window18
+    4300104: pasted__pCube2
+    4300106: pasted__pCube3
+    4300108: Window19
+    4300110: pasted__pCube2
+    4300112: pasted__pCube3
+    4300114: Window20
+    4300116: pasted__pCube2
+    4300118: pasted__pCube3
+    4300120: Window21
+    4300122: pasted__pCube2
+    4300124: pasted__pCube3
+    4300126: Window22
+    4300128: pasted__pCube2
+    4300130: pasted__pCube3
+    4300132: Window23
+    4300134: pasted__pCube2
+    4300136: pasted__pCube3
+    4300138: Window24
+    4300140: pasted__pCube2
+    4300142: pasted__pCube3
+    4300144: Window25
+    4300146: pasted__pCube2
+    4300148: pasted__pCube3
+    4300150: Window26
+    4300152: pasted__pCube2
+    4300154: pasted__pCube3
+    4300156: polySurface5
+    4300158: polySurface6
+    4300160: polySurface4
+    4300162: polySurface7
+    4300164: polySurface2
+    4300166: polySurface8
+    4300168: Unit7
+    4300170: Unit6
+    4300172: Unit5
+    4300174: Unit4
+    4300176: Unit2
+    4300178: Door9
+    4300180: Door7
+    4300182: Door6
+    4300184: Door5
+    4300186: Door4
+    4300188: Door3
+    4300190: Door2
+    4300192: Door1
+    4300194: Door
+    4300196: Earth
+    4300198: Pool
+    4300200: Ladder
+    4300202: DivingBoard
+    4300204: PoolToy1
+    4300206: BuildingFloor
+    4300208: CharacterRef
+    4300210: Unit8
+    4300212: Unit9
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
