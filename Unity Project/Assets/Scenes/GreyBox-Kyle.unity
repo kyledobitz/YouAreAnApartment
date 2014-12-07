@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 1354554312}
   m_GameObject: {fileID: 38613993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 0, z: 5}
+  m_LocalPosition: {x: 15, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 882498292}
@@ -259,7 +259,7 @@ GameObject:
   - 136: {fileID: 121424788}
   m_Layer: 0
   m_Name: Female Child
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!1001 &141898784
 Prefab:
@@ -549,7 +550,7 @@ GameObject:
   - 136: {fileID: 245920018}
   m_Layer: 0
   m_Name: Female Adult
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,6 +716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!1 &264984912
 GameObject:
@@ -1036,7 +1038,7 @@ GameObject:
   - 136: {fileID: 550441891}
   m_Layer: 0
   m_Name: Female Elder
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1202,6 +1204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!1 &560037830
 GameObject:
@@ -1398,6 +1401,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 563361323}
   m_GameObject: {fileID: 605925452}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &633379872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 633379873}
+  m_Layer: 0
+  m_Name: Flat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &633379873
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633379872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2082452232}
+  m_RootOrder: 0
 --- !u!1 &666118303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,7 +2314,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1223409595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 1.5, z: 10}
+  m_LocalPosition: {x: 20, y: 1.5, z: 0}
   m_LocalScale: {x: 10, y: 3, z: 10}
   m_Children:
   - {fileID: 901536434}
@@ -2850,7 +2880,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 9c2a4235fbf38f14fa761e2cb9d48aff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9c2a4235fbf38f14fa761e2cb9d48aff, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2858,7 +2888,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9c2a4235fbf38f14fa761e2cb9d48aff, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9c2a4235fbf38f14fa761e2cb9d48aff, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3168,7 +3198,7 @@ GameObject:
   - 136: {fileID: 1506637039}
   m_Layer: 0
   m_Name: Male Child
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3222,6 +3252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!136 &1506637039
 CapsuleCollider:
@@ -3653,7 +3684,7 @@ GameObject:
   - 136: {fileID: 1564059183}
   m_Layer: 0
   m_Name: Male Adult
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3688,6 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!114 &1564059182
 MonoBehaviour:
@@ -4393,7 +4425,7 @@ GameObject:
   - 136: {fileID: 1884646697}
   m_Layer: 0
   m_Name: Male Elder
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4447,6 +4479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!136 &1884646697
 CapsuleCollider:
@@ -4888,6 +4921,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 141898784}
   m_GameObject: {fileID: 2042237834}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2082452231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2082452232}
+  m_Layer: 0
+  m_Name: Building
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082452232
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082452231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 633379873}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &2097864945
 GameObject:
   m_ObjectHideFlags: 0
