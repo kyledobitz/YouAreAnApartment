@@ -22,7 +22,7 @@ public class Meanders : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        nextDecisionTime = getNextDecisionTime();
+        nextDecisionTime = Time.time;
         speed = minSpeed;
 	}
 	

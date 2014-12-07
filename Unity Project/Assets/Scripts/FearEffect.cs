@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(Collider))]
 public class FearEffect : MonoBehaviour {
 
     public float effectRadius;
@@ -9,8 +10,8 @@ public class FearEffect : MonoBehaviour {
     public Animation scarimation; //excellent name from Devon
     public string fearEffect;
 
-    void OnMouseDown(){
-        Debug.Log("I GOT PRESSED WOOO");
+    public void Scare(){
+        Debug.Log(gameObject.name + "used Scare");
         if (FearLevel.IsActive(fearEffect))
         {
             Debug.Log("fear effect is active");
