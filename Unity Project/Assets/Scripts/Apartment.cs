@@ -16,7 +16,10 @@ public class Apartment : MonoBehaviour {
 	public int minChildNumber;
 	public int maxChildNumber;
 	public GameObject[] childPrefabs;
+	public float minVacancyTime;
+	public float maxVacancyTime;
 
+	float endVacancyTime;
     List<GameObject> residents;
 	State state;
 
@@ -80,6 +83,14 @@ public class Apartment : MonoBehaviour {
 		}
 	}
 
+	void BeginMoving(){
+		Debug.Log ("MOVING");
+		var residents = CreateResidents ();
+		foreach (GameObject resident in residents) {
+			PlaceResidentInRoom(resident);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		switch (state) {
@@ -89,12 +100,33 @@ public class Apartment : MonoBehaviour {
 				state = State.EVACUATING;
 			}
 			break;
+		case State.EVACUATING:
+			if(residents.Count == 0){
+				Debug.Log("VACANT");
+				endVacancyTime = Time.time + Random.Range(minVacancyTime,maxVacancyTime);
+				state = State.VACANT;
+			}
+			break;
+		case State.VACANT:
+			if(Time.time > endVacancyTime){
+				BeginMoving();
+				state = State.MOVING;
+			}
+			break;
+		case State.MOVING:
+			foreach(GameObject resident in residents){
+				if(((Meanders) resident.GetComponent (typeof(Meanders))).currentRoom == null) break;
+			}
+			Debug.Log("FULL");
+			state = State.FULL;
+			break;
 		}
 	}
 	
 	public enum State{
 		FULL,
 		EVACUATING,
-		VACANT
+		VACANT,
+		MOVING
 	}
 }
