@@ -6,7 +6,7 @@ public class FearEffect : MonoBehaviour {
 	public EffectName SpecificFearEffect;
 	private float cooldown;
 	private float fearAmount;
-	private 
+	
 
 	// Use this for initialization
 	void Start () {
