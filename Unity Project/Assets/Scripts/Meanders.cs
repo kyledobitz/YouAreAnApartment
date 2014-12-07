@@ -28,6 +28,7 @@ public class Meanders : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // Handle state changes
         switch (state)
         {
             case State.STANDING:
@@ -56,6 +57,7 @@ public class Meanders : MonoBehaviour {
                 break;
         }
 
+        // Handle Movements
         switch (state)
         {
             case State.MEANDERING:
@@ -73,7 +75,7 @@ public class Meanders : MonoBehaviour {
     }
 
     bool IsAtDestination(){
-        return (transform.position - destination).magnitude < 0.01f;
+        return (transform.position - destination).magnitude < 0.1f;
     }
    
     float getNextDecisionTime(){
@@ -119,7 +121,7 @@ public class Meanders : MonoBehaviour {
     }
 
     void Move(){
-        if((transform.position - destination).magnitude < 0.01f) 
+        if((transform.position - destination).magnitude < 0.1f) 
             return;
         heading = (destination - transform.position).normalized;
         transform.forward = heading;
