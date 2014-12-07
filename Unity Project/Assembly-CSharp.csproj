@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Meanders.cs" />
      <Compile Include="Assets\Scripts\MouseOverHighlight.cs" />
      <Compile Include="Assets\Scripts\ScaredyCat.cs" />
+     <Compile Include="Assets\Scripts\TransparencyAdjustment.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Materials\TransparentGlow.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Alpha.shader" />
