@@ -13,7 +13,7 @@ public class TranslucentWhenScary : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (ScaredyCat.totalFear >= fearThreshholdToBecomeClear)
+        if (FearLevel.totalFear >= fearThreshholdToBecomeClear)
             renderer.material.shader = transparent;
         else
             renderer.material.shader = opaque;

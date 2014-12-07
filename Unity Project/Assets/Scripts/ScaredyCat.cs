@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioClip))]
+[RequireComponent(typeof(Collider))]
 public class ScaredyCat : MonoBehaviour
 {
     public GameObject fearMeter;
@@ -12,11 +14,8 @@ public class ScaredyCat : MonoBehaviour
     public float fearDecrementAmount = 1f;
     public float _fear = 0f;
     public float fearFactor = 1f;
-	private static float _totalFear = 0f;
 
     Camera gameCamera;
-
-    public static float totalFear { get { return _totalFear; } }
 
     public float fear{ get { return _fear; } }
 
@@ -24,9 +23,8 @@ public class ScaredyCat : MonoBehaviour
     {
         float fright = scariness * fearFactor;
         _fear += fright;
-        _totalFear += fright;
+        FearLevel.totalFear += fright;
         audio.Play();
-        Debug.Log(gameObject.name + " has fear of " + _fear);
     }
 
     // Use this for initialization
