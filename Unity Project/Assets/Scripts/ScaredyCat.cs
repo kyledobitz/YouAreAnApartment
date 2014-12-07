@@ -1,12 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScaredyCat : MonoBehaviour
 {
+    public GameObject fearMeter;
+    Slider fearSlider;
+    
+
+    public float maxFear = 120f;
     public float fearDecrementAmount = 1f;
     public float _fear = 0f;
     public float fearFactor = 1f;
 	private static float _totalFear = 0f;
+
+    Camera gameCamera;
 
     public static float totalFear { get { return _totalFear; } }
 
@@ -24,13 +32,22 @@ public class ScaredyCat : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        fearMeter = (GameObject) Instantiate(fearMeter);
+        fearSlider = fearMeter.GetComponentInChildren<Slider>();
+        Debug.Log(fearSlider);
+        gameCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        fearSlider.minValue = 0;
+        fearSlider.maxValue = maxFear;
 
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        fearSlider.transform.position = gameCamera.WorldToScreenPoint(gameObject.transform.position);
+
+        fearSlider.value = _fear;
         if (_fear > 0)
-            _fear -= fearDecrementAmount * Time.deltaTime;
+            _fear -= fearDecrementAmount * Time.fixedDeltaTime;
     }
 }

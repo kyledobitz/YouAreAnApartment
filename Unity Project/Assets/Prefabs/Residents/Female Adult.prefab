@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 82: {fileID: 8200002}
+  - 136: {fileID: 13600004}
   m_Layer: 0
   m_Name: Female Adult
   m_TagString: Resident
@@ -99,7 +100,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 33: {fileID: 3300008}
-  - 136: {fileID: 13600004}
   - 23: {fileID: 2300008}
   m_Layer: 0
   m_Name: Body
@@ -447,7 +447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433e2ed468975fc40b0dd9b24aafd615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fearMeter: {fileID: 100012, guid: ebd83adb10c5646168c75dc57a229bed, type: 2}
+  maxFear: 120
   fearDecrementAmount: 1
+  _fear: 0
   fearFactor: 1
 --- !u!135 &13500000
 SphereCollider:
@@ -504,12 +507,12 @@ CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
+  m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .5
-  m_Height: 2
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
