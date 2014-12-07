@@ -4,7 +4,7 @@ using System.Collections;
 public class ScaredyCat : MonoBehaviour
 {
     public float fearDecrementAmount = 1f;
-    float _fear = 0f;
+    public float _fear = 0f;
     public float fearFactor = 1f;
 	private static float _totalFear = 0f;
 
