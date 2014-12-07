@@ -37,15 +37,17 @@ public class Meanders : MonoBehaviour {
         // Handle state changes
         switch (state)
         {
-            case State.STANDING:
+			case State.STANDING:
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
                     state = DecideNextState();
-                }
+				}
+				velocity = Vector3.zero;
                 break;
             case State.MEANDERING:
                 if(IsAtDestination()){
-                    state = State.STANDING;
+					state = State.STANDING;
+					velocity = Vector3.zero;
                 }
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
@@ -62,6 +64,7 @@ public class Meanders : MonoBehaviour {
                 }
                 break;
         }
+		animator.SetFloat ("Speed", velocity.magnitude);
 
         // Handle Movements
         switch (state)
@@ -75,7 +78,6 @@ public class Meanders : MonoBehaviour {
                 Move();
                 break;
 		}
-		animator.SetFloat ("Speed", velocity.magnitude);
 	}
 
     bool IsAtDestination(){
