@@ -4,30 +4,29 @@ using System.Collections.Generic;
 
 public class FearEffect : MonoBehaviour {
 
-    public Collider effectArea;
+    public float effectRadius;
     public float fearAmount;
     public Animation scarimation; //excellent name from Devon
     public string fearEffect;
-
-    List<GameObject> residents = new List<GameObject>();
 
     void OnMouseDown(){
         Debug.Log("I GOT PRESSED WOOO");
         if (FearLevel.IsActive(fearEffect))
         {
+            Debug.Log("fear effect is active");
             //PLAY ANIMATION. COSMO MAKE THIS WORK LOL
-            foreach (GameObject person in residents)
+            Collider[] nearbyResidents = Physics.OverlapSphere(gameObject.transform.position, effectRadius);
+            Debug.Log("nearbyResidents length is: " + nearbyResidents.Length);
+            foreach (Collider person in nearbyResidents)
             {
-                if (person.tag == "resident")
-                    person.GetComponent<ScaredyCat>().beScared(fearAmount);
+                if (person.gameObject.tag == "Resident")
+                {
+                    Debug.Log("person is a resident");
+                    person.gameObject.GetComponent<ScaredyCat>().beScared(fearAmount);
+                }
             }
         }
 
-    }
-
-    void OnTriggerEnter(Collider other){
-        residents.Add(other.gameObject);
-        Debug.Log("SOMEBODY IS HERE WOOO");
     }
 
 
