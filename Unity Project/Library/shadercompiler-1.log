@@ -1,6 +1,7 @@
-Base path: /Applications/Unity/Unity.app/Contents
-Pipe name: \\.\pipe\UnityShaderCompiler-1--1602129452
+Base path: C:/Program Files (x86)/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-5428
 Cmd: getPlatforms
+<<<<<<< HEAD
 Cmd: preprocess
   insize=447 outsize=447 ok=1
 Cmd: preprocess
@@ -119,3 +120,5 @@ Cmd: compileSnippet
   api=0 type=0 insize=5088 outsize=1034 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
   api=0 type=1 insize=5088 outsize=600 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+=======
+>>>>>>> FETCH_HEAD
