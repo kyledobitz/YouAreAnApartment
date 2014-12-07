@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class Meanders : MonoBehaviour {
 
-    public GameObject[] doorways;
-    public BoxCollider currentRoom;
+    //public Doorway[] doorways;
+    public Collider currentRoom;
     public float minSpeed = 1f;
     public float maxSpeed = 2f;
     public float standVsMeanderPercent = 0.5f;
     public float minDelayTime = 2f;
     public float maxDelayTime = 5f;
+    public float doorMagnetism = 5f;
 
     float nextDecisionTime;
     State state = State.STANDING;
@@ -33,7 +35,7 @@ public class Meanders : MonoBehaviour {
                 break;
             case State.STANDING:
                 break;
-            case State.SWITCHING_ROOMS:
+            case State.GOING_TO_DOOR:
                 Move();
                 break;
         }
@@ -43,34 +45,67 @@ public class Meanders : MonoBehaviour {
         switch (state)
         {
             case State.STANDING:
-                if(Time.time > nextDecisionTime)
-                    nextDecisionTime = getNextDecisionTime();
-                    state = DecideNextState();
-                break;
-            case State.MEANDERING:
-                if((transform.position - destination).magnitude < 0.01f)
-                    state = State.STANDING;
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
-                    Debug.Log("new decision time: " + nextDecisionTime);
                     state = DecideNextState();
                 }
                 break;
-            case State.SWITCHING_ROOMS:
+            case State.MEANDERING:
+                if(IsAtDestination()){
+                    state = State.STANDING;
+                }
+                if(Time.time > nextDecisionTime){
+                    nextDecisionTime = getNextDecisionTime();
+                    state = DecideNextState();
+                }
+                break;
+            case State.GOING_TO_DOOR:
+                if(IsAtDestination()){
+                    nextDecisionTime = getNextDecisionTime();
+                    Collider nextRoom = GetNearbyDoor().GetNextRoom(currentRoom);
+                    currentRoom = nextRoom;
+                    ChooseMeanderDestination();
+                    state = State.MEANDERING;
+                }
                 break;
         }
+    }
+
+    bool IsAtDestination(){
+        return (transform.position - destination).magnitude < 0.01f;
     }
    
     float getNextDecisionTime(){
         return Time.time + Random.Range (minDelayTime, maxDelayTime);
     }
 
+    Doorway GetNearbyDoor(){
+        //var doorways = Resources.FindObjectsOfTypeAll(typeof(Doorway));//
+        var doorwayObjects = GameObject.FindGameObjectsWithTag("Doorway");
+        foreach (GameObject doorwayObject in doorwayObjects)
+        {
+            Doorway doorway = doorwayObject.GetComponentInChildren<Doorway>();
+            if((transform.position - doorway.transform.position).magnitude < doorMagnetism)
+                return doorway;
+        }
+        return null;
+    }
+
     State DecideNextState(){
+        Doorway nearbyDoor = GetNearbyDoor();
+        if(nearbyDoor != null){
+            destination = nearbyDoor.transform.position;
+            return State.GOING_TO_DOOR;
+        }
         if (Random.value < standVsMeanderPercent)
+        {
+            audio.Play();
             return State.STANDING;
-        else 
+        } else 
+        {
             ChooseMeanderDestination();
             return State.MEANDERING;
+        }
     }
 
     void ChooseMeanderDestination(){
@@ -83,7 +118,9 @@ public class Meanders : MonoBehaviour {
     }
 
     void Move(){
-        heading = (destination - gameObject.transform.position).normalized;
+        if((transform.position - destination).magnitude < 0.01f) 
+            return;
+        heading = (destination - transform.position).normalized;
         transform.forward = heading;
         velocity = heading * speed;
         transform.position += Time.deltaTime*velocity;
@@ -92,6 +129,6 @@ public class Meanders : MonoBehaviour {
     public enum State{
         MEANDERING,
         STANDING,
-        SWITCHING_ROOMS
+        GOING_TO_DOOR
     }
 }
