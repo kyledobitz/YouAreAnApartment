@@ -50,12 +50,19 @@
      <Compile Include="Assets\Scripts\MouseOverHighlight.cs" />
      <Compile Include="Assets\Scripts\ScaredyCat.cs" />
      <Compile Include="Assets\Scripts\TransparencyAdjustment.cs" />
-     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Materials\TransparentGlow.shader" />
-     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Alpha.shader" />
-     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
-     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
-     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Shaders\JMO Assets\Toony Gooch\Shaders\Toony_Gooch_RimOutlineHard.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-Alpha.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Shaders\JMO Assets\!JMO Assets Readme.txt" />
+     <None Include="Assets\Shaders\JMO Assets\Toony Gooch\Shaders\Toony_Gooch_RimLight.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Shaders\Toon Shading\Sources\Shaders\Toony-Lighted-Alpha.shader" />
+     <None Include="Assets\Shaders\JMO Assets\Toony Gooch\Shaders\Toony_Gooch_RimAlpha.shader" />
+     <None Include="Assets\Shaders\JMO Assets\Toony Gooch\Shaders\Toony_Gooch_RimOutline.shader" />
+     <None Include="Assets\Shaders\JMO Assets\Toony Gooch\Shaders\Toony_Gooch.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

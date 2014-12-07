@@ -13,11 +13,11 @@ public class TransparencyAdjustment : MonoBehaviour {
     void Update() {
         // guy in a forum said something like this to get children of children
         // gameObject.GetComponentsInChildren(Transform);
-        foreach (Transform child in gameObject.transform) {
+       // foreach (Transform child in gameObject.transform) {
 
-        Color color = child.renderer.material.color;
+        Color color = gameObject.renderer.material.color;
         color.a = alphaAdjust;
-        child.renderer.material.color = color;
-        }
+        gameObject.renderer.material.color = color;
+        //}
 }
 }

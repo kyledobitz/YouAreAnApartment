@@ -10,7 +10,7 @@ Shader "Toon/Alpha" {
 		Tags { "RenderType"="Opaque" }
 		Pass {
 			Name "BASE"
-			//Cull Off
+			Cull Off
 			Blend SrcAlpha OneMinusSrcAlpha //Add This
 			
 			CGPROGRAM
@@ -60,7 +60,7 @@ Shader "Toon/Alpha" {
 		Tags {"Queue"="Transparent" "RenderType"="Transparent"} //Change this
 		Pass {
 			Name "BASE"
-			// Cull Off
+			Cull Off
 			SetTexture [_MainTex] {
 				constantColor [_Color]
 				Combine texture * constant
