@@ -77,9 +77,9 @@ public class Apartment : MonoBehaviour {
 	}
 
 	void BeginEvacuation(){
-		Debug.Log ("EVACUATING!");
+		Debug.Log ("EVACUATING " + residents.Count);
 		foreach (GameObject resident in residents) {
-			Destroy(resident,3);
+			Destroy(resident, 3);
 		}
 	}
 
@@ -93,6 +93,7 @@ public class Apartment : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		residents.RemoveAll (item => item == null);
 		switch (state) {
 		case State.FULL:
 			if(IsFearTooHigh()){

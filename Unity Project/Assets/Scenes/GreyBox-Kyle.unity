@@ -7002,6 +7002,8 @@ MonoBehaviour:
   minChildNumber: 0
   maxChildNumber: 0
   childPrefabs: []
+  minVacancyTime: 2
+  maxVacancyTime: 4
 --- !u!1 &1917137708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7244,6 +7246,8 @@ MonoBehaviour:
   minChildNumber: 0
   maxChildNumber: 0
   childPrefabs: []
+  minVacancyTime: 2
+  maxVacancyTime: 4
 --- !u!1 &1964449781
 GameObject:
   m_ObjectHideFlags: 0
