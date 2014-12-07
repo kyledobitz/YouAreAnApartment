@@ -46,7 +46,6 @@ public class Meanders : MonoBehaviour {
             case State.MEANDERING:
                 if(IsAtDestination()){
                     state = State.STANDING;
-					animator.SetBool ("Walk", false);
                 }
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
@@ -60,7 +59,6 @@ public class Meanders : MonoBehaviour {
                     currentRoom = nextRoom;
                     ChooseMeanderDestination();
 					state = State.MEANDERING;
-					animator.SetBool ("Walk", true);
                 }
                 break;
         }
@@ -76,11 +74,9 @@ public class Meanders : MonoBehaviour {
             case State.GOING_TO_DOOR:
                 Move();
                 break;
-        }
+		}
+		animator.SetFloat ("Speed", velocity.magnitude);
 	}
-
-    void FixedUpdate (){
-    }
 
     bool IsAtDestination(){
         return (transform.position - destination).magnitude < 0.2f;
@@ -106,17 +102,14 @@ public class Meanders : MonoBehaviour {
         Doorway nearbyDoor = GetNearbyDoor();
         if(nearbyDoor != null){
             destination = nearbyDoor.transform.position;
-			animator.SetBool ("Walk", true);
             return State.GOING_TO_DOOR;
         }
         if (Random.value < standVsMeanderPercent)
 		{
-			animator.SetBool ("Walk", false);
             return State.STANDING;
         } else 
         {
 			ChooseMeanderDestination();
-			animator.SetBool ("Walk", true);
             return State.MEANDERING;
         }
     }
