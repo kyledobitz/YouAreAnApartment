@@ -30,20 +30,6 @@ public class Meanders : MonoBehaviour {
 	void Update () {
         switch (state)
         {
-            case State.MEANDERING:
-                Move();
-                break;
-            case State.STANDING:
-                break;
-            case State.GOING_TO_DOOR:
-                Move();
-                break;
-        }
-	}
-
-    void FixedUpdate (){
-        switch (state)
-        {
             case State.STANDING:
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
@@ -69,6 +55,21 @@ public class Meanders : MonoBehaviour {
                 }
                 break;
         }
+
+        switch (state)
+        {
+            case State.MEANDERING:
+                Move();
+                break;
+            case State.STANDING:
+                break;
+            case State.GOING_TO_DOOR:
+                Move();
+                break;
+        }
+	}
+
+    void FixedUpdate (){
     }
 
     bool IsAtDestination(){
