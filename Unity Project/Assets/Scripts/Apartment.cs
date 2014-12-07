@@ -68,21 +68,26 @@ public class Apartment : MonoBehaviour {
 	bool IsFearTooHigh(){
 		foreach (GameObject resident in residents) {
 			ScaredyCat cat = (ScaredyCat) resident.GetComponent (typeof(ScaredyCat));
-			if(cat.maxFear - cat.fear < 0.5) return true;
+			if(cat.maxFear - cat.fear < 0.5f) return true;
 		}
 		return false;
 	}
 
 	void BeginEvacuation(){
-		Debug.Log ("Evacuating");
+		Debug.Log ("EVACUATING!");
+		foreach (GameObject resident in residents) {
+			Destroy(resident,3);
+		}
 	}
 
 	// Update is called once per frame
 	void Update () {
 		switch (state) {
 		case State.FULL:
-			if(IsFearTooHigh())
+			if(IsFearTooHigh()){
 				BeginEvacuation();
+				state = State.EVACUATING;
+			}
 			break;
 		}
 	}

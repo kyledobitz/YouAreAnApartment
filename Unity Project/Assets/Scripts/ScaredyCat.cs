@@ -49,4 +49,8 @@ public class ScaredyCat : MonoBehaviour
         if (_fear > 0)
             _fear -= fearDecrementAmount * Time.fixedDeltaTime;
     }
+
+	void OnDestroy(){
+		Destroy (fearMeter);
+	}
 }
