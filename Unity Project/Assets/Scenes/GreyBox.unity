@@ -259,7 +259,7 @@ GameObject:
   - 136: {fileID: 121424788}
   m_Layer: 0
   m_Name: Female Child
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,6 +469,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100008, guid: 38fe13bbcb3323e41aaf41f55731dc32, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 13600002, guid: 38fe13bbcb3323e41aaf41f55731dc32, type: 2}
@@ -549,7 +553,7 @@ GameObject:
   - 136: {fileID: 245920018}
   m_Layer: 0
   m_Name: Female Adult
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1036,7 +1040,7 @@ GameObject:
   - 136: {fileID: 550441891}
   m_Layer: 0
   m_Name: Female Elder
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1318,6 +1322,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100002, guid: 3bfcc2e1b5d37c7419524667c901e31a, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 13600002, guid: 3bfcc2e1b5d37c7419524667c901e31a, type: 2}
@@ -1467,7 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67cd244b71246e84aa5635c42711b290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectRadius: 10
+  effectRadius: 25
   fearAmount: 1
   scarimation: {fileID: 0}
   fearEffect: cold
@@ -1933,6 +1941,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100000, guid: 9c595ea01c3f00a4ba5731174f96fab6, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 13600004, guid: 9c595ea01c3f00a4ba5731174f96fab6, type: 2}
@@ -2444,6 +2456,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100002, guid: b078d2b20740c4b4a811f21183fe276a, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 13600004, guid: b078d2b20740c4b4a811f21183fe276a, type: 2}
@@ -3180,7 +3196,7 @@ GameObject:
   - 136: {fileID: 1506637039}
   m_Layer: 0
   m_Name: Male Child
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3665,7 +3681,7 @@ GameObject:
   - 136: {fileID: 1564059183}
   m_Layer: 0
   m_Name: Male Adult
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4208,6 +4224,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100008, guid: 10b6741cc306ca642b9a97accc998b4f, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 10b6741cc306ca642b9a97accc998b4f, type: 2}
@@ -4257,6 +4277,10 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 717724396}
+    - target: {fileID: 100010, guid: a623abb1a3d4b5c438d517ae1c6d5e91, type: 2}
+      propertyPath: m_TagString
+      value: Resident
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 13600000, guid: a623abb1a3d4b5c438d517ae1c6d5e91, type: 2}
@@ -4405,7 +4429,7 @@ GameObject:
   - 136: {fileID: 1884646697}
   m_Layer: 0
   m_Name: Male Elder
-  m_TagString: Untagged
+  m_TagString: Resident
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
