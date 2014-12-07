@@ -85,7 +85,7 @@ public class Apartment : MonoBehaviour {
 
 	void BeginMoving(){
 		Debug.Log ("MOVING");
-		var residents = CreateResidents ();
+		residents = CreateResidents ();
 		foreach (GameObject resident in residents) {
 			PlaceResidentInRoom(resident);
 		}
