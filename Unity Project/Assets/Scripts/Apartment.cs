@@ -17,10 +17,10 @@ public class Apartment : MonoBehaviour {
 	public int maxChildNumber;
 	public GameObject[] childPrefabs;
 
-    GameObject[] residents;
+    List<GameObject> residents;
 	State state;
 
-	GameObject[] CreateResidents(){
+	List<GameObject> CreateResidents(){
 		int numberOfAdults = Random.Range (minAdultNumber, maxAdultNumber);
 		int numberOfChildren = Random.Range (minChildNumber, maxChildNumber);
 		if (numberOfAdults + numberOfChildren > maxPeopleNumber)
@@ -42,7 +42,7 @@ public class Apartment : MonoBehaviour {
             resident.transform.SetParent(family.transform);
         }
 
-		return (GameObject[]) newResidents.ToArray();
+		return newResidents;
 	}
 
 	void PlaceResidentInRoom(GameObject resident){
