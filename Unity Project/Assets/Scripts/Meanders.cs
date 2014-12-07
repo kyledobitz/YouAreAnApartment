@@ -114,7 +114,7 @@ public class Meanders : MonoBehaviour {
         var maxX = currentRoom.bounds.max.x;
         var maxZ = currentRoom.bounds.max.z;
         destination = new Vector3(Random.Range(minX, maxX), transform.position.y, Random.Range(minZ, maxZ));
-        Debug.Log("next meander destination:" + destination.ToString());
+        //Debug.Log("next meander destination:" + destination.ToString());
     }
 
     void Move(){
