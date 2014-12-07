@@ -34,7 +34,6 @@ public class ScaredyCat : MonoBehaviour
     {
         fearMeter = (GameObject) Instantiate(fearMeter);
         fearSlider = fearMeter.GetComponentInChildren<Slider>();
-        Debug.Log(fearSlider);
         gameCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         fearSlider.minValue = 0;
         fearSlider.maxValue = maxFear;
@@ -42,7 +41,7 @@ public class ScaredyCat : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         fearSlider.transform.position = gameCamera.WorldToScreenPoint(gameObject.transform.position);
 
