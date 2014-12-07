@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
 public class Meanders : MonoBehaviour {
 
     //public Doorway[] doorways;
@@ -98,8 +99,9 @@ public class Meanders : MonoBehaviour {
         }
         if (Random.value < standVsMeanderPercent)
         {
+            audio.Play();
             return State.STANDING;
-        } else
+        } else 
         {
             ChooseMeanderDestination();
             return State.MEANDERING;
