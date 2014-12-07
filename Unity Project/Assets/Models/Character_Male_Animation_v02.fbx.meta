@@ -1,86 +1,87 @@
 fileFormatVersion: 2
-guid: 7b9a08d5eea2b44d796081e7aa50df71
+guid: bdd0a8196ba45453ea8a6f19e3fe5cae
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: eye
-    100004: eye_2
-    100006: forearm
-    100008: forearm_2
-    100010: hair
-    100012: Head
-    100014: Left_Arm
-    100016: Left_Leg
-    100018: mouth
-    100020: Right_Arm
-    100022: Right_Leg
-    100024: shin
-    100026: shin_2
-    100028: Torso
+    100002: forearm
+    100004: forearm_2
+    100006: hair
+    100008: head
+    100010: Left_arm
+    100012: left_eye
+    100014: Left_Leg
+    100016: mouth
+    100018: RIght_arm
+    100020: right_eye
+    100022: RIght_Leg
+    100024: shin_foot
+    100026: shin_foot_2
+    100028: torso
     400000: //RootNode
-    400002: eye
-    400004: eye_2
-    400006: forearm
-    400008: forearm_2
-    400010: hair
-    400012: Head
-    400014: Left_Arm
-    400016: Left_Leg
-    400018: mouth
-    400020: Right_Arm
-    400022: Right_Leg
-    400024: shin
-    400026: shin_2
-    400028: Torso
-    2300000: eye
-    2300002: eye_2
-    2300004: forearm
-    2300006: forearm_2
-    2300008: hair
-    2300010: Head
-    2300012: Left_Arm
-    2300014: Left_Leg
-    2300016: mouth
-    2300018: Right_Arm
-    2300020: Right_Leg
-    2300022: shin
-    2300024: shin_2
-    2300026: Torso
-    3300000: eye
-    3300002: eye_2
-    3300004: forearm
-    3300006: forearm_2
-    3300008: hair
-    3300010: Head
-    3300012: Left_Arm
-    3300014: Left_Leg
-    3300016: mouth
-    3300018: Right_Arm
-    3300020: Right_Leg
-    3300022: shin
-    3300024: shin_2
-    3300026: Torso
-    4300000: Head
-    4300002: mouth
-    4300004: eye
-    4300006: eye_2
-    4300008: hair
-    4300010: Torso
-    4300012: Left_Arm
+    400002: forearm
+    400004: forearm_2
+    400006: hair
+    400008: head
+    400010: Left_arm
+    400012: left_eye
+    400014: Left_Leg
+    400016: mouth
+    400018: RIght_arm
+    400020: right_eye
+    400022: RIght_Leg
+    400024: shin_foot
+    400026: shin_foot_2
+    400028: torso
+    2300000: forearm
+    2300002: forearm_2
+    2300004: hair
+    2300006: head
+    2300008: Left_arm
+    2300010: left_eye
+    2300012: Left_Leg
+    2300014: mouth
+    2300016: RIght_arm
+    2300018: right_eye
+    2300020: RIght_Leg
+    2300022: shin_foot
+    2300024: shin_foot_2
+    2300026: torso
+    3300000: forearm
+    3300002: forearm_2
+    3300004: hair
+    3300006: head
+    3300008: Left_arm
+    3300010: left_eye
+    3300012: Left_Leg
+    3300014: mouth
+    3300016: RIght_arm
+    3300018: right_eye
+    3300020: RIght_Leg
+    3300022: shin_foot
+    3300024: shin_foot_2
+    3300026: torso
+    4300000: head
+    4300002: hair
+    4300004: left_eye
+    4300006: right_eye
+    4300008: mouth
+    4300010: torso
+    4300012: Left_arm
     4300014: forearm
-    4300016: Right_Arm
+    4300016: RIght_arm
     4300018: forearm_2
-    4300020: Right_Leg
-    4300022: shin
-    4300024: Left_Leg
-    4300026: shin_2
-    7400000: Walk
-    7400002: Run
-    7400004: Jump
-    7400006: Curious
-    7400008: Idle
+    4300020: Left_Leg
+    4300022: shin_foot
+    4300024: RIght_Leg
+    4300026: shin_foot_2
+    7400000: Idle
+    7400002: Walk
+    7400004: Run
+    7400006: Jump
+    7400008: Curious
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -98,10 +99,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walk
+      name: Idle
       takeName: C4D Animation Take
-      firstFrame: 30
-      lastFrame: 59
+      firstFrame: 0
+      lastFrame: 2
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -123,41 +124,97 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Head
+      - path: head
         weight: 1
-      - path: Head/eye
+      - path: head/hair
         weight: 1
-      - path: Head/eye_2
+      - path: head/left_eye
         weight: 1
-      - path: Head/hair
+      - path: head/mouth
         weight: 1
-      - path: Head/mouth
+      - path: head/right_eye
         weight: 1
-      - path: Torso
+      - path: torso
         weight: 1
-      - path: Torso/Left_Arm
+      - path: torso/Left_arm
         weight: 1
-      - path: Torso/Left_Arm/forearm
+      - path: torso/Left_arm/forearm
         weight: 1
-      - path: Torso/Left_Leg
+      - path: torso/Left_Leg
         weight: 1
-      - path: Torso/Left_Leg/shin_2
+      - path: torso/Left_Leg/shin_foot
         weight: 1
-      - path: Torso/Right_Arm
+      - path: torso/RIght_arm
         weight: 1
-      - path: Torso/Right_Arm/forearm_2
+      - path: torso/RIght_arm/forearm_2
         weight: 1
-      - path: Torso/Right_Leg
+      - path: torso/RIght_Leg
         weight: 1
-      - path: Torso/Right_Leg/shin
+      - path: torso/RIght_Leg/shin_foot_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: C4D Animation Take
+      firstFrame: 5
+      lastFrame: 32
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: head
+        weight: 1
+      - path: head/hair
+        weight: 1
+      - path: head/left_eye
+        weight: 1
+      - path: head/mouth
+        weight: 1
+      - path: head/right_eye
+        weight: 1
+      - path: torso
+        weight: 1
+      - path: torso/Left_arm
+        weight: 1
+      - path: torso/Left_arm/forearm
+        weight: 1
+      - path: torso/Left_Leg
+        weight: 1
+      - path: torso/Left_Leg/shin_foot
+        weight: 1
+      - path: torso/RIght_arm
+        weight: 1
+      - path: torso/RIght_arm/forearm_2
+        weight: 1
+      - path: torso/RIght_Leg
+        weight: 1
+      - path: torso/RIght_Leg/shin_foot_2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: Run
       takeName: C4D Animation Take
-      firstFrame: 100
-      lastFrame: 119
+      firstFrame: 33
+      lastFrame: 51
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -179,41 +236,41 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Head
+      - path: head
         weight: 1
-      - path: Head/eye
+      - path: head/hair
         weight: 1
-      - path: Head/eye_2
+      - path: head/left_eye
         weight: 1
-      - path: Head/hair
+      - path: head/mouth
         weight: 1
-      - path: Head/mouth
+      - path: head/right_eye
         weight: 1
-      - path: Torso
+      - path: torso
         weight: 1
-      - path: Torso/Left_Arm
+      - path: torso/Left_arm
         weight: 1
-      - path: Torso/Left_Arm/forearm
+      - path: torso/Left_arm/forearm
         weight: 1
-      - path: Torso/Left_Leg
+      - path: torso/Left_Leg
         weight: 1
-      - path: Torso/Left_Leg/shin_2
+      - path: torso/Left_Leg/shin_foot
         weight: 1
-      - path: Torso/Right_Arm
+      - path: torso/RIght_arm
         weight: 1
-      - path: Torso/Right_Arm/forearm_2
+      - path: torso/RIght_arm/forearm_2
         weight: 1
-      - path: Torso/Right_Leg
+      - path: torso/RIght_Leg
         weight: 1
-      - path: Torso/Right_Leg/shin
+      - path: torso/RIght_Leg/shin_foot_2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: Jump
       takeName: C4D Animation Take
-      firstFrame: 150
-      lastFrame: 170
+      firstFrame: 52
+      lastFrame: 72
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -235,47 +292,47 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Head
+      - path: head
         weight: 1
-      - path: Head/eye
+      - path: head/hair
         weight: 1
-      - path: Head/eye_2
+      - path: head/left_eye
         weight: 1
-      - path: Head/hair
+      - path: head/mouth
         weight: 1
-      - path: Head/mouth
+      - path: head/right_eye
         weight: 1
-      - path: Torso
+      - path: torso
         weight: 1
-      - path: Torso/Left_Arm
+      - path: torso/Left_arm
         weight: 1
-      - path: Torso/Left_Arm/forearm
+      - path: torso/Left_arm/forearm
         weight: 1
-      - path: Torso/Left_Leg
+      - path: torso/Left_Leg
         weight: 1
-      - path: Torso/Left_Leg/shin_2
+      - path: torso/Left_Leg/shin_foot
         weight: 1
-      - path: Torso/Right_Arm
+      - path: torso/RIght_arm
         weight: 1
-      - path: Torso/Right_Arm/forearm_2
+      - path: torso/RIght_arm/forearm_2
         weight: 1
-      - path: Torso/Right_Leg
+      - path: torso/RIght_Leg
         weight: 1
-      - path: Torso/Right_Leg/shin
+      - path: torso/RIght_Leg/shin_foot_2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: Curious
       takeName: C4D Animation Take
-      firstFrame: 180
-      lastFrame: 236
+      firstFrame: 73
+      lastFrame: 129
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -291,89 +348,33 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Head
+      - path: head
         weight: 1
-      - path: Head/eye
+      - path: head/hair
         weight: 1
-      - path: Head/eye_2
+      - path: head/left_eye
         weight: 1
-      - path: Head/hair
+      - path: head/mouth
         weight: 1
-      - path: Head/mouth
+      - path: head/right_eye
         weight: 1
-      - path: Torso
+      - path: torso
         weight: 1
-      - path: Torso/Left_Arm
+      - path: torso/Left_arm
         weight: 1
-      - path: Torso/Left_Arm/forearm
+      - path: torso/Left_arm/forearm
         weight: 1
-      - path: Torso/Left_Leg
+      - path: torso/Left_Leg
         weight: 1
-      - path: Torso/Left_Leg/shin_2
+      - path: torso/Left_Leg/shin_foot
         weight: 1
-      - path: Torso/Right_Arm
+      - path: torso/RIght_arm
         weight: 1
-      - path: Torso/Right_Arm/forearm_2
+      - path: torso/RIght_arm/forearm_2
         weight: 1
-      - path: Torso/Right_Leg
+      - path: torso/RIght_Leg
         weight: 1
-      - path: Torso/Right_Leg/shin
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Idle
-      takeName: C4D Animation Take
-      firstFrame: 161
-      lastFrame: 171
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Head
-        weight: 1
-      - path: Head/eye
-        weight: 1
-      - path: Head/eye_2
-        weight: 1
-      - path: Head/hair
-        weight: 1
-      - path: Head/mouth
-        weight: 1
-      - path: Torso
-        weight: 1
-      - path: Torso/Left_Arm
-        weight: 1
-      - path: Torso/Left_Arm/forearm
-        weight: 1
-      - path: Torso/Left_Leg
-        weight: 1
-      - path: Torso/Left_Leg/shin_2
-        weight: 1
-      - path: Torso/Right_Arm
-        weight: 1
-      - path: Torso/Right_Arm/forearm_2
-        weight: 1
-      - path: Torso/Right_Leg
-        weight: 1
-      - path: Torso/Right_Leg/shin
+      - path: torso/RIght_Leg/shin_foot_2
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
