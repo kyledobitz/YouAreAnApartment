@@ -16,9 +16,12 @@ public class ScaredyCat : MonoBehaviour
     {
         float fright = scariness * fearFactor;
         _fear += fright;
-        fearFactor += fright;
-        if (fearFactor < 0f)
-            fearFactor = 0f;
+        _totalFear += fright;
+        if (_fear < 0f)
+            _fear = 0f;
+        if (_totalFear < 0f)
+            _totalFear = 0f;
+        Debug.Log("Current fear is " + _fear);
     }
 
     // Use this for initialization
@@ -30,6 +33,7 @@ public class ScaredyCat : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        beScared(-fearDecrementAmount * Time.deltaTime);
+        if (_fear > 0)
+            beScared(-fearDecrementAmount * Time.deltaTime);
     }
 }
