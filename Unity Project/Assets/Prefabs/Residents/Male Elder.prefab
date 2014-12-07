@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433e2ed468975fc40b0dd9b24aafd615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fearMeter: {fileID: 0}
+  fearMeter: {fileID: 100012, guid: ebd83adb10c5646168c75dc57a229bed, type: 2}
   maxFear: 120
   fearDecrementAmount: 1
   _fear: 0
