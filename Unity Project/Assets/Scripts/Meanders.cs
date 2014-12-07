@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Animator))]
 public class Meanders : MonoBehaviour {
 
     //public Doorway[] doorways;
@@ -13,12 +13,18 @@ public class Meanders : MonoBehaviour {
     public float maxDelayTime = 5f;
     public float doorMagnetism = 5f;
 
+	Animator animator;
     float nextDecisionTime;
     State state = State.STANDING;
     Vector3 destination;
     float speed;
     Vector3 velocity;
     Vector3 heading;
+
+	void Awake()
+	{
+		animator = transform.GetComponent<Animator>();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +46,7 @@ public class Meanders : MonoBehaviour {
             case State.MEANDERING:
                 if(IsAtDestination()){
                     state = State.STANDING;
+					animator.SetBool ("Walk", false);
                 }
                 if(Time.time > nextDecisionTime){
                     nextDecisionTime = getNextDecisionTime();
@@ -52,7 +59,8 @@ public class Meanders : MonoBehaviour {
                     Collider nextRoom = GetNearbyDoor().GetNextRoom(currentRoom);
                     currentRoom = nextRoom;
                     ChooseMeanderDestination();
-                    state = State.MEANDERING;
+					state = State.MEANDERING;
+					animator.SetBool ("Walk", true);
                 }
                 break;
         }
@@ -75,7 +83,7 @@ public class Meanders : MonoBehaviour {
     }
 
     bool IsAtDestination(){
-        return (transform.position - destination).magnitude < 0.1f;
+        return (transform.position - destination).magnitude < 0.2f;
     }
    
     float getNextDecisionTime(){
@@ -98,15 +106,17 @@ public class Meanders : MonoBehaviour {
         Doorway nearbyDoor = GetNearbyDoor();
         if(nearbyDoor != null){
             destination = nearbyDoor.transform.position;
+			animator.SetBool ("Walk", true);
             return State.GOING_TO_DOOR;
         }
         if (Random.value < standVsMeanderPercent)
-        {
-            //audio.Play();
+		{
+			animator.SetBool ("Walk", false);
             return State.STANDING;
         } else 
         {
-            ChooseMeanderDestination();
+			ChooseMeanderDestination();
+			animator.SetBool ("Walk", true);
             return State.MEANDERING;
         }
     }

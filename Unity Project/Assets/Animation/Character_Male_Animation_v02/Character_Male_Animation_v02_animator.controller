@@ -176,8 +176,8 @@ Transition:
   m_TransitionDuration: .0024764433
   m_TransitionOffset: 1
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Curious
+  - m_ConditionMode: 2
+    m_ConditionEvent: Walk
     m_EventTreshold: 0
     m_ExitTime: .732142866
   m_Atomic: 1
@@ -297,13 +297,20 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110215908}
+      first: {fileID: 110200000}
       second:
-      - {fileID: 110178724}
+      - {fileID: 110100000}
+      - {fileID: 110135771}
+      - {fileID: 110145225}
+      - {fileID: 110175528}
     data:
       first: {fileID: 110204141}
       second:
       - {fileID: 110135339}
+    data:
+      first: {fileID: 110215908}
+      second:
+      - {fileID: 110178724}
     data:
       first: {fileID: 110245998}
       second:
@@ -312,13 +319,6 @@ StateMachine:
       first: {fileID: 110298366}
       second:
       - {fileID: 110199869}
-    data:
-      first: {fileID: 110200000}
-      second:
-      - {fileID: 110100000}
-      - {fileID: 110135771}
-      - {fileID: 110145225}
-      - {fileID: 110175528}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
