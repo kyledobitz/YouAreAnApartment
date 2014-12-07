@@ -16,7 +16,7 @@ public class ClickThings : MonoBehaviour {
         hits = Physics.RaycastAll(ray);
         foreach (RaycastHit hit in hits)
         {
-            Debug.Log(hit.collider.gameObject.name);
+            //Debug.Log(hit.collider.gameObject.name);
             FearEffect fear = hit.collider.gameObject.GetComponent<FearEffect>();
             if (fear)
             {

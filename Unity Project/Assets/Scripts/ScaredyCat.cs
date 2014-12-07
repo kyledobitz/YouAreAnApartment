@@ -18,6 +18,7 @@ public class ScaredyCat : MonoBehaviour
         _fear += fright;
         _totalFear += fright;
         audio.Play();
+        Debug.Log(gameObject.name + " has fear of " + _fear);
     }
 
     // Use this for initialization
