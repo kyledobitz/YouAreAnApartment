@@ -1,0 +1,116 @@
+fileFormatVersion: 2
+guid: 96ba5e76f6ac1554e85b60f167934f9f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Boole
+    100002: bushes
+    100004: Cube_Cube_1
+    100006: //RootNode
+    100008: Platonic
+    100010: Platonic_1
+    100012: Platonic_2
+    100014: Platonic_2_2
+    100016: Platonic_3
+    100018: Platonic_4
+    100020: Platonic_5
+    100022: Platonic_5_2
+    100024: Platonic_5_3
+    400000: Boole
+    400002: bushes
+    400004: Cube_Cube_1
+    400006: //RootNode
+    400008: Platonic
+    400010: Platonic_1
+    400012: Platonic_2
+    400014: Platonic_2_2
+    400016: Platonic_3
+    400018: Platonic_4
+    400020: Platonic_5
+    400022: Platonic_5_2
+    400024: Platonic_5_3
+    2300000: Cube_Cube_1
+    2300002: Platonic
+    2300004: Platonic_1
+    2300006: Platonic_2
+    2300008: Platonic_2_2
+    2300010: Platonic_3
+    2300012: Platonic_4
+    2300014: Platonic_5
+    2300016: Platonic_5_2
+    2300018: Platonic_5_3
+    3300000: Cube_Cube_1
+    3300002: Platonic
+    3300004: Platonic_1
+    3300006: Platonic_2
+    3300008: Platonic_2_2
+    3300010: Platonic_3
+    3300012: Platonic_4
+    3300014: Platonic_5
+    3300016: Platonic_5_2
+    3300018: Platonic_5_3
+    4300000: Cube_Cube_1
+    4300002: Platonic_1
+    4300004: Platonic_4
+    4300006: Platonic_5
+    4300008: Platonic_3
+    4300010: Platonic_2
+    4300012: Platonic
+    4300014: Platonic_5_2
+    4300016: Platonic_2_2
+    4300018: Platonic_5_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
