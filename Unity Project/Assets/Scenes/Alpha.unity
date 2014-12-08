@@ -935,7 +935,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cd6487e7ec618374886ca420bd78c4e7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2465,7 +2465,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3464e21881f38bc4f9c25f3d626e8d74, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13500000, guid: 3464e21881f38bc4f9c25f3d626e8d74, type: 2}
@@ -6192,7 +6192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: .999999821}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!45 &872649577
 Skybox:
   m_ObjectHideFlags: 0
@@ -8179,7 +8179,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 48d8d10d01fd1e847a203273c3219c14, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9519,7 +9519,7 @@ Transform:
   - {fileID: 1728995571}
   - {fileID: 957767868}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
 --- !u!95 &1354673788
 Animator:
   serializedVersion: 3
@@ -9788,7 +9788,7 @@ Transform:
   m_Children:
   - {fileID: 1976991667}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1385429943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9831,7 +9831,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19e1a7f3fbf388844bf405bbeb51c518, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -10890,7 +10890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae1a2cb6897ac6844a698203e2d04269, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ae1a2cb6897ac6844a698203e2d04269, type: 2}
       propertyPath: buttonPosition.x
@@ -13410,6 +13410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e269f160bf18348beb6936f42c8a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coldParticles: {fileID: 100000, guid: 35538a0313e234aa4ad75b3b82dc1a93, type: 2}
+  deviceParticles: {fileID: 100000, guid: a90509256fce24d05a0badd21d5243e0, type: 2}
+  possessionParticles: {fileID: 100000, guid: 45a4b7371d8a542ea9352dde8a5c379e, type: 2}
   coldPowerThreshold: 0
   lightsPowerThreshold: 0
   devicePowerThreshold: 100
@@ -15260,7 +15263,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &1832372509
 GameObject:
   m_ObjectHideFlags: 0
@@ -17882,7 +17885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &2030528578
 GameObject:
   m_ObjectHideFlags: 0

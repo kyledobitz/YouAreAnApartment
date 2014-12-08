@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class FearLevel : MonoBehaviour
 {
+	public GameObject coldParticles;
+	public GameObject deviceParticles;
+	public GameObject possessionParticles;
 
 	public float coldPowerThreshold = 0f;
 	public float lightsPowerThreshold = 0f;
@@ -47,6 +50,10 @@ public class FearLevel : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		cold.prefab = coldParticles;
+		device.prefab = deviceParticles;
+		possession.prefab = possessionParticles;
+
 		ScaryObject.fearEffects.Add ("cold", cold); 
 		ScaryObject.fearEffects.Add ("lights", lights);
 		ScaryObject.fearEffects.Add ("device", device);
