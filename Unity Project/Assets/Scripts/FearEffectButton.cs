@@ -7,8 +7,7 @@ using System.Collections;
 public class FearEffectButton : MonoBehaviour {
 
 	ScaryObject relevantFearEffect;
-	public Vector3 buttonPosition;
-	public Vector3 hidingPosition;
+
 	private bool inPlace = false;
 
 	private Vector3 smallSize = new Vector3(3,3,3);
@@ -36,15 +35,16 @@ public class FearEffectButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		relevantFearEffect = gameObject.GetComponent<ScaryObject> ();
-		gameObject.transform.position = hidingPosition;
+		gameObject.renderer.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (relevantFearEffect.thisEffect.canBeUsed && !inPlace)
 		{
-			gameObject.transform.position = buttonPosition;
+			gameObject.renderer.enabled = true;
 			inPlace = true;
 		}
 		if (!relevantFearEffect.thisEffect.isActive)
