@@ -18,7 +18,10 @@ public class Apartment : MonoBehaviour {
 	public GameObject[] childPrefabs;
 	public float minVacancyTime;
 	public float maxVacancyTime;
+	public float minComingUpStairsTime;
+	public float maxComingUpStairsTime;
 
+	float nextComingUpStairsTime;
 	float endVacancyTime;
     List<GameObject> residents;
 	State state;
@@ -42,9 +45,10 @@ public class Apartment : MonoBehaviour {
         family.transform.SetParent (apartment.transform);
         foreach (GameObject resident in newResidents)
         {
-            resident.transform.SetParent(family.transform);
-        }
-
+			resident.transform.SetParent(family.transform);
+			Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
+			meanderer.frontDoorToStairsPath = frontDoorToStairsPath;
+		}
 		return newResidents;
 	}
 
@@ -58,7 +62,6 @@ public class Apartment : MonoBehaviour {
 		resident.transform.forward = new Vector3 (Random.value, 0, Random.value).normalized;
 		Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
 		meanderer.currentRoom = randomRoom;
-		meanderer.frontDoorToStairsPath = frontDoorToStairsPath;
 	}
 
 	// Use this for initialization
@@ -90,8 +93,25 @@ public class Apartment : MonoBehaviour {
 		Debug.Log ("MOVING");
 		residents = CreateResidents ();
 		foreach (GameObject resident in residents) {
-			PlaceResidentInRoom(resident);
+			resident.SetActive(false);
 		}
+		nextComingUpStairsTime = Time.time;
+	}
+
+	void SendResidentUpStairs(){
+		foreach (GameObject resident in residents) {
+			if(resident.activeSelf){ 
+				continue;			
+			}
+			resident.transform.position = frontDoorToStairsPath[frontDoorToStairsPath.Length-1].transform.position;
+			Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
+			meanderer.currentRoom = rooms[0];
+			meanderer.BeginMovingIn();
+			resident.SetActive(true);
+			return;
+		}
+		Debug.Log ("FULL");
+		state = State.FULL;
 	}
 
 	// Update is called once per frame
@@ -114,15 +134,15 @@ public class Apartment : MonoBehaviour {
 		case State.VACANT:
 			if(Time.time > endVacancyTime){
 				BeginMoving();
+
 				state = State.MOVING;
 			}
 			break;
 		case State.MOVING:
-			foreach(GameObject resident in residents){
-				if(((Meanders) resident.GetComponent (typeof(Meanders))).currentRoom == null) break;
+			if(Time.time > nextComingUpStairsTime){
+				SendResidentUpStairs();
+				nextComingUpStairsTime = Time.time + Random.Range(minComingUpStairsTime, maxComingUpStairsTime);
 			}
-			Debug.Log("FULL");
-			state = State.FULL;
 			break;
 		}
 	}
