@@ -13,6 +13,7 @@ public class ScaryObject : MonoBehaviour {
 			fearRequiredToUnlock = _fearRequiredToUnlock;
 
 		}
+		public GameObject prefab;
 		public float cooldown;
 		public float fearAmount;
 		public float fearRequiredToUnlock;
@@ -20,6 +21,8 @@ public class ScaryObject : MonoBehaviour {
 		public bool isActive;
 		public bool canBeUsed;
 	}
+
+
     
     public float effectRadius = 10f; //remove soon
     public Animation scarimation;
@@ -47,6 +50,7 @@ public class ScaryObject : MonoBehaviour {
             Collider[] nearbyColliders = Physics.OverlapSphere(gameObject.transform.position, effectRadius);
 			thisEffect.readyAt = Time.time + thisEffect.cooldown;
 			thisEffect.isActive = false;
+			Instantiate(thisEffect.prefab,gameObject.transform.position,Quaternion.identity);
 
             foreach (Collider coll in nearbyColliders)
             {

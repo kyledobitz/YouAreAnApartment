@@ -28,6 +28,11 @@ public class FearEffectButton : MonoBehaviour {
 					entry.Value.isActive = false;
             }
         }
+		else if (relevantFearEffect.thisEffect.isActive)
+		{
+			relevantFearEffect.thisEffect.isActive = false;
+			MarkUnselected();
+		}
 
 	}
 
