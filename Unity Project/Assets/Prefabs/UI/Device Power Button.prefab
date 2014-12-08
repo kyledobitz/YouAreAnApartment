@@ -28,6 +28,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Device Power Button
   m_TagString: Untagged
@@ -104,6 +105,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPosition: {x: -5, y: 0, z: 9}
   hidingPosition: {x: 100, y: 100, z: 100}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ccd2dfd7683bef45914ef302ee6624c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: .100000001
+  period: 3
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -1007,11 +1007,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   apartment: {fileID: 100008}
   frontDoorToStairsPath:
+  - {fileID: 100000}
   - {fileID: 100018}
   - {fileID: 100002}
   - {fileID: 100028}
   - {fileID: 100004}
-  - {fileID: 0}
   rooms:
   - {fileID: 6500004}
   - {fileID: 6500002}

@@ -956,6 +956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6db15df2cf0ae4693ee44003b46c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorways: []
   currentRoom: {fileID: 0}
   frontDoorMagnetism: 3
   minSpeed: 2
@@ -979,7 +980,7 @@ MonoBehaviour:
   fearMeter: {fileID: 100012, guid: ebd83adb10c5646168c75dc57a229bed, type: 2}
   maxFear: 120
   fearDecrementAmount: 1
-  fearFactor: 1
+  fearFactor: 1000
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
