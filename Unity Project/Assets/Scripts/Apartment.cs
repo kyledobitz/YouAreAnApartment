@@ -6,8 +6,8 @@ public class Apartment : MonoBehaviour {
 
 	public GameObject apartment;
 
+	public GameObject[] frontDoorToStairsPath;
 	public Collider[] rooms;
-	public GameObject[] Doorways;
 
 	public int maxPeopleNumber;
 	public int minAdultNumber;
@@ -56,7 +56,9 @@ public class Apartment : MonoBehaviour {
 		var maxZ = randomRoom.bounds.max.z;
 		resident.transform.position = new Vector3(Random.Range(minX, maxX), transform.position.y, Random.Range(minZ, maxZ));
 		resident.transform.forward = new Vector3 (Random.value, 0, Random.value).normalized;
-		((Meanders) resident.GetComponent (typeof(Meanders))).currentRoom = randomRoom;
+		Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
+		meanderer.currentRoom = randomRoom;
+		meanderer.frontDoorToStairsPath = frontDoorToStairsPath;
 	}
 
 	// Use this for initialization
@@ -79,7 +81,8 @@ public class Apartment : MonoBehaviour {
 	void BeginEvacuation(){
 		Debug.Log ("EVACUATING " + residents.Count);
 		foreach (GameObject resident in residents) {
-			Destroy(resident, 3);
+			Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
+			meanderer.BeginEvacuating();
 		}
 	}
 
