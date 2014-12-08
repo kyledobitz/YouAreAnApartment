@@ -425,12 +425,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 717724396}
+  frontDoorMagnetism: 10
   minSpeed: 2
   maxSpeed: 4
   standVsMeanderPercent: .5
   minDelayTime: 2
   maxDelayTime: 5
-  doorMagnetism: 5
+  doorMagnetism: 3
+  frontDoorToStairsPath: []
 --- !u!114 &47256699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5969,6 +5971,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e269f160bf18348beb6936f42c8a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coldPowerThreshold: 0
+  lightsPowerThreshold: 0
+  devicePowerThreshold: 100
+  coldPowerCooldown: 10
+  lightsPowerCooldown: 10
+  devicePowerCooldwon: 10
 --- !u!4 &1679912072
 Transform:
   m_ObjectHideFlags: 0
@@ -6988,12 +6996,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   apartment: {fileID: 1911358156}
+  frontDoorToStairsPath: []
   rooms:
   - {fileID: 1228514105}
   - {fileID: 418251489}
   - {fileID: 1971498525}
   - {fileID: 551293466}
-  Doorways: []
   maxPeopleNumber: 20
   minAdultNumber: 5
   maxAdultNumber: 15
@@ -7232,12 +7240,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   apartment: {fileID: 1952899617}
+  frontDoorToStairsPath: []
   rooms:
   - {fileID: 738692785}
   - {fileID: 1504688535}
   - {fileID: 25703404}
   - {fileID: 2043696590}
-  Doorways: []
   maxPeopleNumber: 20
   minAdultNumber: 5
   maxAdultNumber: 15
