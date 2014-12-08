@@ -33,7 +33,7 @@ public class FearLevel : MonoBehaviour {
             return false;
     }
 
-	public static ScaryObject.Effect cold = new ScaryObject.Effect (10f, 10f,0f);
+	public static ScaryObject.Effect cold = new ScaryObject.Effect (30f, 10f,0f);
 	public static ScaryObject.Effect lights = new ScaryObject.Effect (10f, 10f,0f);
 	public static ScaryObject.Effect device = new ScaryObject.Effect (10f, 10f,300f);
 	public static ScaryObject.Effect fling = new ScaryObject.Effect (10f, 10f,500f);
@@ -44,7 +44,6 @@ public class FearLevel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cold.isActive = true;
 		ScaryObject.fearEffects.Add ("cold", cold); 
 		ScaryObject.fearEffects.Add ("lights", lights);
 		ScaryObject.fearEffects.Add ("device", device);

@@ -425,12 +425,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 717724396}
+  frontDoorMagnetism: 3
   minSpeed: 2
   maxSpeed: 4
   standVsMeanderPercent: .5
   minDelayTime: 2
   maxDelayTime: 5
-  doorMagnetism: 5
+  doorMagnetism: 3
+  frontDoorToStairsPath: []
 --- !u!114 &47256699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fearMeter: {fileID: 100012, guid: ebd83adb10c5646168c75dc57a229bed, type: 2}
   maxFear: 120
-  fearDecrementAmount: 10
+  fearDecrementAmount: 1
   fearFactor: 1
 --- !u!95 &47256700
 Animator:
@@ -743,6 +745,7 @@ MonoBehaviour:
   scarimation: {fileID: 0}
   fearEffect: 
   SpecificFearEffect: 2
+  CHECK_THIS_BOX_FOR_BUTTONS: 1
 --- !u!1001 &120147235
 Prefab:
   m_ObjectHideFlags: 0
@@ -1645,7 +1648,8 @@ MonoBehaviour:
   effectRadius: 0
   scarimation: {fileID: 0}
   fearEffect: 
-  SpecificFearEffect: 0
+  SpecificFearEffect: 2
+  CHECK_THIS_BOX_FOR_BUTTONS: 0
 --- !u!65 &427345451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1842,6 +1846,107 @@ MeshFilter:
   m_PrefabInternal: {fileID: 20583308}
   m_GameObject: {fileID: 460199169}
   m_Mesh: {fileID: 4300018, guid: bdd0a8196ba45453ea8a6f19e3fe5cae, type: 3}
+--- !u!1 &462986180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462986181}
+  - 33: {fileID: 462986186}
+  - 135: {fileID: 462986185}
+  - 23: {fileID: 462986184}
+  - 114: {fileID: 462986183}
+  - 114: {fileID: 462986182}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462986181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 30}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children:
+  - {fileID: 2075080168}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+--- !u!114 &462986182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f489bd0a1cbd664b927ae3cf31ba8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectRadius: 10
+  scarimation: {fileID: 0}
+  fearEffect: 
+  SpecificFearEffect: 0
+  CHECK_THIS_BOX_FOR_BUTTONS: 1
+--- !u!114 &462986183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a75b914ecf670b4185658cfa1f815a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPosition: {x: 15, y: 0, z: 30}
+  hidingPosition: {x: 100, y: 100, z: 100}
+--- !u!23 &462986184
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &462986185
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &462986186
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462986180}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &463295616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,6 +2998,7 @@ MonoBehaviour:
   scarimation: {fileID: 0}
   fearEffect: 
   SpecificFearEffect: 0
+  CHECK_THIS_BOX_FOR_BUTTONS: 0
 --- !u!65 &666118308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7367,12 +7473,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   apartment: {fileID: 1911358156}
+  frontDoorToStairsPath: []
   rooms:
   - {fileID: 1228514105}
   - {fileID: 418251489}
   - {fileID: 1971498525}
   - {fileID: 551293466}
-  Doorways: []
   maxPeopleNumber: 20
   minAdultNumber: 5
   maxAdultNumber: 15
@@ -7383,6 +7489,8 @@ MonoBehaviour:
   childPrefabs: []
   minVacancyTime: 2
   maxVacancyTime: 4
+  minComingUpStairsTime: 0
+  maxComingUpStairsTime: 0
 --- !u!1 &1917137708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,12 +7719,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   apartment: {fileID: 1952899617}
+  frontDoorToStairsPath: []
   rooms:
   - {fileID: 738692785}
   - {fileID: 1504688535}
   - {fileID: 25703404}
   - {fileID: 2043696590}
-  Doorways: []
   maxPeopleNumber: 20
   minAdultNumber: 5
   maxAdultNumber: 15
@@ -7627,6 +7735,8 @@ MonoBehaviour:
   childPrefabs: []
   minVacancyTime: 2
   maxVacancyTime: 4
+  minComingUpStairsTime: 0
+  maxComingUpStairsTime: 0
 --- !u!1 &1964449781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8152,6 +8262,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 20583308}
   m_GameObject: {fileID: 2069021889}
   m_Mesh: {fileID: 4300006, guid: bdd0a8196ba45453ea8a6f19e3fe5cae, type: 3}
+--- !u!1 &2075080167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2075080168}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2075080168
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2075080167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 462986181}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &2082452231
 GameObject:
   m_ObjectHideFlags: 0

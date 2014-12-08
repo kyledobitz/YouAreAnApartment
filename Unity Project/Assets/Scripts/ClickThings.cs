@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class ClickThings : MonoBehaviour {
 
 
-	public static bool awaitingClick = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -31,13 +30,14 @@ public class ClickThings : MonoBehaviour {
         if (Input.GetMouseButton (0)) 
 		{
 			Click ();
-//			if (!awaitingClick)
-//				foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
-//					{
-//						entry.Value.isActive = false;
-//					}
-//			else
-//				awaitingClick = false;
+
+		}
+		if (Input.GetMouseButton(1))
+		{
+			foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
+				{
+					entry.Value.isActive = false;
+				}
 		}
     }
 }

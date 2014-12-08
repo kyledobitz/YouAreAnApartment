@@ -16,21 +16,17 @@ public class ScaryObject : MonoBehaviour {
 		public float cooldown;
 		public float fearAmount;
 		public float fearRequiredToUnlock;
-		public float readyAt;
+		public float readyAt = 0.0f;
 		public bool isActive;
 		public bool canBeUsed;
 	}
-
-	public static Effect cold = new Effect (10f, 10f,0f); 
-	public static Effect lights = new Effect (10f, 10f,0f);
-	public static Effect device = new Effect (10f, 10f,300f);
-	public static Effect fling = new Effect (10f, 10f,500f);
-	public static Effect possession = new Effect (10f, 10f,1000f);
     
     public float effectRadius = 10f; //remove soon
     public Animation scarimation;
     public string fearEffect;
 	public EffectName SpecificFearEffect;
+	
+	public bool CHECK_THIS_BOX_FOR_BUTTONS;
 
 	public static Dictionary<string, Effect> fearEffects = new Dictionary<string, Effect>();
 
@@ -43,13 +39,14 @@ public class ScaryObject : MonoBehaviour {
 
 
     public void Scare(){
-        if (thisEffect.isActive)
+        if (thisEffect.isActive && !this.CHECK_THIS_BOX_FOR_BUTTONS)
         {
 			Debug.Log(gameObject.name + " used its fear effect");
             //PLAY ANIMATION. COSMO MAKE THIS WORK LOL
 
             Collider[] nearbyColliders = Physics.OverlapSphere(gameObject.transform.position, effectRadius);
 			thisEffect.readyAt = Time.time + thisEffect.cooldown;
+			thisEffect.isActive = false;
 
             foreach (Collider coll in nearbyColliders)
             {
