@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ClickThings : MonoBehaviour {
 
+
+	public static bool awaitingClick = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +19,6 @@ public class ClickThings : MonoBehaviour {
         hits = Physics.RaycastAll(ray);
         foreach (RaycastHit hit in hits)
         {
-            //Debug.Log(hit.collider.gameObject.name);
             ScaryObject fear = hit.collider.gameObject.GetComponent<ScaryObject>();
             if (fear)
             {
@@ -26,7 +28,16 @@ public class ClickThings : MonoBehaviour {
 	}
     void Update()
     {
-        if (Input.GetMouseButton(0))
-            Click();
+        if (Input.GetMouseButton (0)) 
+		{
+			Click ();
+//			if (!awaitingClick)
+//				foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
+//					{
+//						entry.Value.isActive = false;
+//					}
+//			else
+//				awaitingClick = false;
+		}
     }
 }

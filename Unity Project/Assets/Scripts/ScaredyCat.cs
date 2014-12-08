@@ -9,10 +9,11 @@ public class ScaredyCat : MonoBehaviour
     public GameObject fearMeter;
     Slider fearSlider;
     
+	
+	private float _fear = 0f;
 
     public float maxFear = 120f;
     public float fearDecrementAmount = 1f;
-    public float _fear = 0f;
     public float fearFactor = 1f;
 
     Camera gameCamera;
@@ -23,7 +24,6 @@ public class ScaredyCat : MonoBehaviour
     {
         float fright = scariness * fearFactor;
         _fear += fright;
-        FearLevel.totalFear += fright;
         audio.Play();
     }
 
@@ -43,9 +43,11 @@ public class ScaredyCat : MonoBehaviour
     {
         fearSlider.transform.position = gameCamera.WorldToScreenPoint(gameObject.transform.position);
 
-        fearSlider.value = _fear;
-        if (_fear > 0)
-            _fear -= fearDecrementAmount * Time.fixedDeltaTime;
+        fearSlider.value = fear;
+        if (_fear > 0) 
+		{
+			_fear -= fearDecrementAmount * Time.deltaTime;
+		}
     }
 
 	void OnDestroy(){
