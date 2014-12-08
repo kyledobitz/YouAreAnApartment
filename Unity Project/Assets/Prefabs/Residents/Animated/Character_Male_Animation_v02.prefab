@@ -957,14 +957,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 0}
-  exit: {fileID: 0}
-  exitMagnetism: 3
+  frontDoorMagnetism: 3
   minSpeed: 2
   maxSpeed: 4
   standVsMeanderPercent: .5
   minDelayTime: 2
   maxDelayTime: 5
   doorMagnetism: 3
+  frontDoorToStairsPath: []
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
