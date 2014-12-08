@@ -1,23 +1,30 @@
 fileFormatVersion: 2
-guid: 12726bfbf90fa2042b9c4406ea638d0a
+guid: 856f9565414c64bceb4d729b896f49ce
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Left_antenna
-    100002: Right_antenna
-    100004: //RootNode
-    400000: Left_antenna
-    400002: Right_antenna
-    400004: //RootNode
-    2300000: Left_antenna
-    2300002: Right_antenna
-    2300004: //RootNode
-    3300000: Left_antenna
-    3300002: Right_antenna
-    3300004: //RootNode
-    4300000: Main_portion
-    4300002: Right_antenna
-    4300004: Left_antenna
+    100000: bed_frame
+    100002: covers
+    100004: Pillow_01
+    100006: Pillow_01_1
+    100008: //RootNode
+    400000: bed_frame
+    400002: covers
+    400004: Pillow_01
+    400006: Pillow_01_1
+    400008: //RootNode
+    2300000: bed_frame
+    2300002: covers
+    2300004: Pillow_01
+    2300006: Pillow_01_1
+    3300000: bed_frame
+    3300002: covers
+    3300004: Pillow_01
+    3300006: Pillow_01_1
+    4300000: bed_frame
+    4300002: Pillow_01_1
+    4300004: Pillow_01
+    4300006: covers
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -38,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
