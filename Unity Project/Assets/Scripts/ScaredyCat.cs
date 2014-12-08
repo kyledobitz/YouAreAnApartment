@@ -13,7 +13,7 @@ public class ScaredyCat : MonoBehaviour
 	private float _fear = 0f;
 
     public float maxFear = 120f;
-    public float fearDecrementAmount = 1f;
+    public float fearDecrementAmount = 5f;
     public float fearFactor = 1f;
 	float stopNoticingAt;
 

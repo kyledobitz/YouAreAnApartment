@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class FearLevel : MonoBehaviour
 {
 	public GameObject coldParticles;
@@ -16,6 +17,8 @@ public class FearLevel : MonoBehaviour
 	public GameObject[] walls;
 	public GameObject[] apartments;
 	public static float totalFear;
+
+	public float countDownToQuit = 1000000f;
 
 	float CalculateTotalFear ()
 	{
@@ -41,11 +44,11 @@ public class FearLevel : MonoBehaviour
 			return false;
 	}
 
-	public static ScaryObject.Effect cold = new ScaryObject.Effect (0.1f, 30f, -5f);
-	public static ScaryObject.Effect lights = new ScaryObject.Effect (0.1f, 30f, 0f);
-	public static ScaryObject.Effect device = new ScaryObject.Effect (0.1f, 30f, 300f);
+	public static ScaryObject.Effect cold = new ScaryObject.Effect (1.5f, 20f, -5f);
+	public static ScaryObject.Effect lights = new ScaryObject.Effect (0.1f, 50f, 0f);
+	public static ScaryObject.Effect device = new ScaryObject.Effect (1.5f, 50f, 300f);
 	public static ScaryObject.Effect fling = new ScaryObject.Effect (0.1f, 30f, 500f);
-	public static ScaryObject.Effect possession = new ScaryObject.Effect (10f, 10f, 1000f);
+	public static ScaryObject.Effect possession = new ScaryObject.Effect (1f, 1000f, 400f);
 
 	// Use this for initialization
 	void Start ()
@@ -92,6 +95,10 @@ public class FearLevel : MonoBehaviour
 				temp.canBeUsed = true;
 			}		
 		}
+
+		if (totalFear > 10000) {
+						//YOU WIN! Not sure how to do this.
+				}
 	}
     
 }
