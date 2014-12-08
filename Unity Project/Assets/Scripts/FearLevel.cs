@@ -66,7 +66,7 @@ public class FearLevel : MonoBehaviour {
 			}
 				
 		}
-		Debug.Log ("Total fear is " + totalFear);
+
 
 
 	}
