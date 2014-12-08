@@ -46,3 +46,6 @@ Unity Project/Assets/Prefabs/Child.prefab
 Unity Project/Library/guidmapper
 
 Unity Project/Library/assetDatabase3
+Unity Project/Assets/Scripts/DisplayTotalFear.cs.meta
+*.meta
+Unity Project/Assets/Editor/Image Effects/AntialiasingAsPostEffectEditor.js.meta
