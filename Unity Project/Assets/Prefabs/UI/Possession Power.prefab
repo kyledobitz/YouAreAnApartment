@@ -29,7 +29,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Cold Power Button
+  m_Name: Possession Power
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   effectRadius: 10
   scarimation: {fileID: 0}
   fearEffect: cold
-  SpecificFearEffect: 0
+  SpecificFearEffect: 4
   CHECK_THIS_BOX_FOR_BUTTONS: 1
 --- !u!114 &11400002
 MonoBehaviour:
