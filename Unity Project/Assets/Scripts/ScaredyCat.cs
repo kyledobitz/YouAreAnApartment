@@ -9,12 +9,13 @@ public class ScaredyCat : MonoBehaviour
     public GameObject fearMeter;
     Slider fearSlider;
     
-	
+	Animator animator;
 	private float _fear = 0f;
 
     public float maxFear = 120f;
     public float fearDecrementAmount = 1f;
     public float fearFactor = 1f;
+	float stopNoticingAt;
 
     Camera gameCamera;
 
@@ -25,8 +26,18 @@ public class ScaredyCat : MonoBehaviour
         float fright = scariness * fearFactor;
         _fear += fright;
         audio.Play();
-    }
+		if (fear >= 60)
+				animator.SetBool ("Jump", true);
+		else
+				animator.SetBool ("Curious", true);
 
+		stopNoticingAt = Time.time + 0.63f;
+
+    }
+	void Awake ()
+	{
+		animator = transform.GetComponent<Animator> ();
+    }
     // Use this for initialization
     void Start()
     {
@@ -47,6 +58,10 @@ public class ScaredyCat : MonoBehaviour
         if (_fear > 0) 
 		{
 			_fear -= fearDecrementAmount * Time.deltaTime;
+		}
+		if (Time.time >= this.stopNoticingAt) {
+			animator.SetBool ("Jump", false);
+			animator.SetBool("Curious", false);
 		}
     }
 

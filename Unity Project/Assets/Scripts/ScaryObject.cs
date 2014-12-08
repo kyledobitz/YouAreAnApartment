@@ -65,12 +65,6 @@ public class ScaryObject : MonoBehaviour {
 		FLING,
         POSSESSION
     }
-
-	public void AssignEffect()
-	{
-
-    }
-    
     
     // Use this for initialization
 	void Start () {
