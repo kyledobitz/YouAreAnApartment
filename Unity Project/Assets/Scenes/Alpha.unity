@@ -1747,31 +1747,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300104, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300100, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300108, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300102, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300098, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300106, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300096, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5f92e55b884c44bcb848745d84e66bd, type: 3}
@@ -2509,7 +2509,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 344333601}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -8742,7 +8742,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 1260211352}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -8861,7 +8861,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 1270058737}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -10678,7 +10678,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 1508307696}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -12427,7 +12427,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 1699872981}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -13407,6 +13407,31 @@ MonoBehaviour:
   coldPowerThreshold: 0
   lightsPowerThreshold: 0
   devicePowerThreshold: 100
+  apartmentUnlockThreshold: 400
+  roofs:
+  - {fileID: 2076213040}
+  - {fileID: 1699872981}
+  - {fileID: 1260211352}
+  - {fileID: 1508307696}
+  - {fileID: 344333601}
+  - {fileID: 1859865872}
+  - {fileID: 1270058737}
+  walls:
+  - {fileID: 1596527022}
+  - {fileID: 1118922394}
+  - {fileID: 1334355479}
+  - {fileID: 294018504}
+  - {fileID: 139993602}
+  - {fileID: 491104466}
+  - {fileID: 145303371}
+  apartments:
+  - {fileID: 805691168}
+  - {fileID: 2116777481}
+  - {fileID: 351681929}
+  - {fileID: 513370139}
+  - {fileID: 1624691945}
+  - {fileID: 903310384}
+  - {fileID: 1668050626}
 --- !u!1 &1779559592
 GameObject:
   m_ObjectHideFlags: 0
@@ -15383,7 +15408,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 1859865872}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -18356,7 +18381,7 @@ Renderer:
     type: 3}
   m_PrefabInternal: {fileID: 220644510}
   m_GameObject: {fileID: 2076213040}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
