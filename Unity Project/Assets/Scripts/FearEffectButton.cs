@@ -11,15 +11,27 @@ public class FearEffectButton : MonoBehaviour {
 	public Vector3 hidingPosition;
 	private bool inPlace = false;
 
+	private Vector3 smallSize = new Vector3(5,5,5);
+	private Vector3 largeSize = new Vector3(10,10,10);
+
+
 	void OnMouseDown()
 	{
-		if (relevantFearEffect.thisEffect.canBeUsed && !relevantFearEffect.thisEffect.isActive)
+		Debug.Log ("relevantFearEffect.thisEffect.isActive = " + relevantFearEffect.thisEffect.isActive);
+		if (relevantFearEffect.thisEffect.canBeUsed && !relevantFearEffect.thisEffect.isActive &&  Time.time >= relevantFearEffect.thisEffect.readyAt )
 		{
 			relevantFearEffect.thisEffect.isActive = true;
-			ClickThings.awaitingClick = true;
+			MarkSelected();
 			Debug.Log("BUTTON CLICKED!");
 		}
 
+	}
+
+	public void MarkSelected(){
+		gameObject.transform.localScale = largeSize;
+	}
+	public void MarkUnselected(){
+		gameObject.transform.localScale = smallSize;
 	}
 
 	// Use this for initialization
@@ -32,9 +44,11 @@ public class FearEffectButton : MonoBehaviour {
 	void Update () {
 		if (relevantFearEffect.thisEffect.canBeUsed && !inPlace)
 		{
-			Debug.Log("BUTTON REVEALED!");
 			gameObject.transform.position = buttonPosition;
 			inPlace = true;
 		}
+		if (!relevantFearEffect.thisEffect.isActive)
+			MarkUnselected();
+		
 	}
 }
