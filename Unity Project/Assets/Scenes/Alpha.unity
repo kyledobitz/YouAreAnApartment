@@ -869,10 +869,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 108901862}
   - 33: {fileID: 108901867}
-  - 135: {fileID: 108901866}
   - 23: {fileID: 108901865}
   - 114: {fileID: 108901864}
   - 114: {fileID: 108901863}
+  - 64: {fileID: 108901866}
   m_Layer: 0
   m_Name: Possession Power
   m_TagString: Untagged
@@ -892,7 +892,7 @@ Transform:
   m_Children:
   - {fileID: 951096540}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &108901863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,19 +943,19 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &108901866
-SphereCollider:
+--- !u!64 &108901866
+MeshCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13500000, guid: 3464e21881f38bc4f9c25f3d626e8d74,
-    type: 2}
-  m_PrefabInternal: {fileID: 336909144}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108901861}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &108901867
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2467,7 +2467,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 13500000, guid: 3464e21881f38bc4f9c25f3d626e8d74, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3464e21881f38bc4f9c25f3d626e8d74, type: 2}
   m_RootGameObject: {fileID: 108901861}
   m_IsPrefabParent: 0
@@ -5731,6 +5732,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: ecf0a1e4e001cef4a9acf14f671682a5, type: 2}
+    - {fileID: 13500000, guid: ecf0a1e4e001cef4a9acf14f671682a5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ecf0a1e4e001cef4a9acf14f671682a5, type: 2}
   m_RootGameObject: {fileID: 1385429941}
   m_IsPrefabParent: 0
@@ -8120,10 +8122,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1137652457}
   - 33: {fileID: 1137652456}
-  - 135: {fileID: 1137652455}
   - 23: {fileID: 1137652454}
   - 114: {fileID: 1137652453}
   - 114: {fileID: 1137652452}
+  - 64: {fileID: 1137652455}
   m_Layer: 0
   m_Name: Cold Power Button
   m_TagString: Untagged
@@ -8181,19 +8183,19 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &1137652455
-SphereCollider:
+--- !u!64 &1137652455
+MeshCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13500000, guid: ae1a2cb6897ac6844a698203e2d04269,
-    type: 2}
-  m_PrefabInternal: {fileID: 1568370137}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1137652451}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1137652456
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9759,10 +9761,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1385429942}
   - 33: {fileID: 1385429947}
-  - 135: {fileID: 1385429946}
   - 23: {fileID: 1385429945}
   - 114: {fileID: 1385429944}
   - 114: {fileID: 1385429943}
+  - 64: {fileID: 1385429946}
   m_Layer: 0
   m_Name: Device Power Button
   m_TagString: Untagged
@@ -9833,19 +9835,19 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!135 &1385429946
-SphereCollider:
+--- !u!64 &1385429946
+MeshCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13500000, guid: ecf0a1e4e001cef4a9acf14f671682a5,
-    type: 2}
-  m_PrefabInternal: {fileID: 783655298}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385429941}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1385429947
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10894,7 +10896,12 @@ Prefab:
       propertyPath: buttonPosition.z
       value: 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 13500000, guid: ae1a2cb6897ac6844a698203e2d04269, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 13500000, guid: ae1a2cb6897ac6844a698203e2d04269, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ae1a2cb6897ac6844a698203e2d04269, type: 2}
   m_RootGameObject: {fileID: 1137652451}
   m_IsPrefabParent: 0
@@ -18962,7 +18969,7 @@ Transform:
   - {fileID: 993623142}
   - {fileID: 1746216255}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &2146179236
 GameObject:
   m_ObjectHideFlags: 0

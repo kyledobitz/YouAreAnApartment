@@ -10,8 +10,8 @@ public class FearEffectButton : MonoBehaviour {
 
 	private bool inPlace = false;
 
-	private Vector3 smallSize = new Vector3(3,3,3);
-	private Vector3 largeSize = new Vector3(2,2,2);
+	private Vector3 smallSize = new Vector3(0.2f,0.2f,0.2f);
+	private Vector3 largeSize = new Vector3(0.15f,0.15f,0.15f);
 
 
 	void OnMouseDown()
