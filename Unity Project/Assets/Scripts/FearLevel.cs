@@ -7,25 +7,29 @@ public class FearLevel : MonoBehaviour {
     public float coldPowerThreshold = 0f;
     public float lightsPowerThreshold = 0f;
     public float devicePowerThreshold = 100f;
+	public float apartmentUnlockThreshold = 400f;
 
-    public static float totalFear{
-		get {
-				float output = 0f;
-				foreach (GameObject resident in GameObject.FindGameObjectsWithTag("Resident"))
-				{
-					try{
-						output += resident.GetComponent<ScaredyCat> ().fear;
-				}
-				catch(System.NullReferenceException e){
-					continue;}
+	public GameObject[] roofs;
+	public GameObject[] walls;
+	public GameObject[] apartments;
 
-				}
-				if (output > 0)
-					return output;
-				else
-					return 0;
-			}
+	public static float totalFear;
 
+	float CalculateTotalFear() {
+		float output = 0f;
+		foreach (GameObject resident in GameObject.FindGameObjectsWithTag("Resident"))
+		{
+			try{
+				output += resident.GetComponent<ScaredyCat> ().fear;
+		}
+		catch(System.NullReferenceException e){
+			continue;}
+
+		}
+		if (output > 0)
+			return output;
+		else
+			return 0;
 	}
 
     public static Dictionary<string,bool> fearPowers = new Dictionary<string, bool>();
@@ -38,7 +42,7 @@ public class FearLevel : MonoBehaviour {
             return false;
     }
 
-	public static ScaryObject.Effect cold = new ScaryObject.Effect (0.1f, 30f,0f);
+	public static ScaryObject.Effect cold = new ScaryObject.Effect (0.1f, 30f,-5f);
 	public static ScaryObject.Effect lights = new ScaryObject.Effect (0.1f, 30f,0f);
 	public static ScaryObject.Effect device = new ScaryObject.Effect (0.1f, 30f,300f);
 	public static ScaryObject.Effect fling = new ScaryObject.Effect (0.1f, 30f,500f);
@@ -56,23 +60,33 @@ public class FearLevel : MonoBehaviour {
 		ScaryObject.fearEffects.Add ("possession", possession);
         fearPowers.Add("cold", true);
         fearPowers.Add("device", false);
-        fearPowers.Add ("lights", true);
+		fearPowers.Add ("lights", true);
+		roofs [0].renderer.enabled = false;
+	}
+
+	void ChangeLockedApartments(){
+		int count = roofs.Length;
+		for(int i = 0; i < count; i++){
+			if(totalFear > i*apartmentUnlockThreshold){
+				roofs[i].renderer.enabled = false;
+				apartments[i].SetActive(false);
+			}
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		totalFear = CalculateTotalFear ();
+		ChangeLockedApartments ();
+
 		foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
 		{
 			ScaryObject.Effect temp = entry.Value;
 			if (totalFear >= temp.fearRequiredToUnlock)
 			{
 				temp.canBeUsed = true;
-			}
-				
+			}		
 		}
-
-
-
 	}
     
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 [RequireComponent(typeof(ScaryObject))]
@@ -7,12 +8,11 @@ using System.Collections;
 public class FearEffectButton : MonoBehaviour {
 
 	ScaryObject relevantFearEffect;
-	public Vector3 buttonPosition;
-	public Vector3 hidingPosition;
+
 	private bool inPlace = false;
 
-	private Vector3 smallSize = new Vector3(3,3,3);
-	private Vector3 largeSize = new Vector3(2,2,2);
+	private Vector3 smallSize = new Vector3(0.2f,0.2f,0.2f);
+	private Vector3 largeSize = new Vector3(0.15f,0.15f,0.15f);
 
 
 	void OnMouseDown()
@@ -22,8 +22,12 @@ public class FearEffectButton : MonoBehaviour {
 		{
 			relevantFearEffect.thisEffect.isActive = true;
 			MarkSelected();
-			Debug.Log("BUTTON CLICKED!");
-		}
+			foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
+			{
+				if (entry.Value != relevantFearEffect.thisEffect)
+					entry.Value.isActive = false;
+            }
+        }
 
 	}
 
@@ -36,15 +40,16 @@ public class FearEffectButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 		relevantFearEffect = gameObject.GetComponent<ScaryObject> ();
-		gameObject.transform.position = hidingPosition;
+		gameObject.renderer.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (relevantFearEffect.thisEffect.canBeUsed && !inPlace)
 		{
-			gameObject.transform.position = buttonPosition;
+			gameObject.renderer.enabled = true;
 			inPlace = true;
 		}
 		if (!relevantFearEffect.thisEffect.isActive)
