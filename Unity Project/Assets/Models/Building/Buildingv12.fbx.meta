@@ -59,48 +59,47 @@ ModelImporter:
     100106: Roof5
     100108: Roof6
     100110: Roof7
-    100112: Staircase
-    100114: Unit1
-    100116: Unit2
-    100118: Unit3
-    100120: Unit4
-    100122: Unit5
-    100124: Unit6
-    100126: Unit7
-    100128: Window1
-    100130: Window10
-    100132: Window13
-    100134: Window14
-    100136: Window15
-    100138: Window16
-    100140: Window19
-    100142: Window2
-    100144: Window20
-    100146: Window21
-    100148: Window22
-    100150: Window25
-    100152: Window26
-    100154: Window3
-    100156: Window4
-    100158: Window7
-    100160: Window8
-    100162: Window9
-    100164: window_glass
-    100166: window_glass_1
-    100168: window_glass_1_2
-    100170: window_glass_1_3
-    100172: window_glass_2
-    100174: window_glass_3
-    100176: window_glass_4
-    100178: window_glass_4_2
-    100180: window_glass_4_3
-    100182: window_glass_4_4
-    100184: window_glass_5
-    100186: window_glass_5_2
-    100188: window_glass_5_3
-    100190: window_glass_5_4
-    100192: window_glass_6
-    100194: window_glass_7
+    100112: Unit1
+    100114: Unit2
+    100116: Unit3
+    100118: Unit4
+    100120: Unit5
+    100122: Unit6
+    100124: Unit7
+    100126: Window1
+    100128: Window10
+    100130: Window13
+    100132: Window14
+    100134: Window15
+    100136: Window16
+    100138: Window19
+    100140: Window2
+    100142: Window20
+    100144: Window21
+    100146: Window22
+    100148: Window25
+    100150: Window26
+    100152: Window3
+    100154: Window4
+    100156: Window7
+    100158: Window8
+    100160: Window9
+    100162: window_glass
+    100164: window_glass_1
+    100166: window_glass_1_2
+    100168: window_glass_1_3
+    100170: window_glass_2
+    100172: window_glass_3
+    100174: window_glass_4
+    100176: window_glass_4_2
+    100178: window_glass_4_3
+    100180: window_glass_4_4
+    100182: window_glass_5
+    100184: window_glass_5_2
+    100186: window_glass_5_3
+    100188: window_glass_5_4
+    100190: window_glass_6
+    100192: window_glass_7
     400000: Building1
     400002: //RootNode
     400004: DivingBoard
@@ -157,48 +156,47 @@ ModelImporter:
     400106: Roof5
     400108: Roof6
     400110: Roof7
-    400112: Staircase
-    400114: Unit1
-    400116: Unit2
-    400118: Unit3
-    400120: Unit4
-    400122: Unit5
-    400124: Unit6
-    400126: Unit7
-    400128: Window1
-    400130: Window10
-    400132: Window13
-    400134: Window14
-    400136: Window15
-    400138: Window16
-    400140: Window19
-    400142: Window2
-    400144: Window20
-    400146: Window21
-    400148: Window22
-    400150: Window25
-    400152: Window26
-    400154: Window3
-    400156: Window4
-    400158: Window7
-    400160: Window8
-    400162: Window9
-    400164: window_glass
-    400166: window_glass_1
-    400168: window_glass_1_2
-    400170: window_glass_1_3
-    400172: window_glass_2
-    400174: window_glass_3
-    400176: window_glass_4
-    400178: window_glass_4_2
-    400180: window_glass_4_3
-    400182: window_glass_4_4
-    400184: window_glass_5
-    400186: window_glass_5_2
-    400188: window_glass_5_3
-    400190: window_glass_5_4
-    400192: window_glass_6
-    400194: window_glass_7
+    400112: Unit1
+    400114: Unit2
+    400116: Unit3
+    400118: Unit4
+    400120: Unit5
+    400122: Unit6
+    400124: Unit7
+    400126: Window1
+    400128: Window10
+    400130: Window13
+    400132: Window14
+    400134: Window15
+    400136: Window16
+    400138: Window19
+    400140: Window2
+    400142: Window20
+    400144: Window21
+    400146: Window22
+    400148: Window25
+    400150: Window26
+    400152: Window3
+    400154: Window4
+    400156: Window7
+    400158: Window8
+    400160: Window9
+    400162: window_glass
+    400164: window_glass_1
+    400166: window_glass_1_2
+    400168: window_glass_1_3
+    400170: window_glass_2
+    400172: window_glass_3
+    400174: window_glass_4
+    400176: window_glass_4_2
+    400178: window_glass_4_3
+    400180: window_glass_4_4
+    400182: window_glass_5
+    400184: window_glass_5_2
+    400186: window_glass_5_3
+    400188: window_glass_5_4
+    400190: window_glass_6
+    400192: window_glass_7
     2300000: Building1
     2300002: DivingBoard
     2300004: Floor1
@@ -254,48 +252,47 @@ ModelImporter:
     2300104: Roof5
     2300106: Roof6
     2300108: Roof7
-    2300110: Staircase
-    2300112: Unit1
-    2300114: Unit2
-    2300116: Unit3
-    2300118: Unit4
-    2300120: Unit5
-    2300122: Unit6
-    2300124: Unit7
-    2300126: Window1
-    2300128: Window10
-    2300130: Window13
-    2300132: Window14
-    2300134: Window15
-    2300136: Window16
-    2300138: Window19
-    2300140: Window2
-    2300142: Window20
-    2300144: Window21
-    2300146: Window22
-    2300148: Window25
-    2300150: Window26
-    2300152: Window3
-    2300154: Window4
-    2300156: Window7
-    2300158: Window8
-    2300160: Window9
-    2300162: window_glass
-    2300164: window_glass_1
-    2300166: window_glass_1_2
-    2300168: window_glass_1_3
-    2300170: window_glass_2
-    2300172: window_glass_3
-    2300174: window_glass_4
-    2300176: window_glass_4_2
-    2300178: window_glass_4_3
-    2300180: window_glass_4_4
-    2300182: window_glass_5
-    2300184: window_glass_5_2
-    2300186: window_glass_5_3
-    2300188: window_glass_5_4
-    2300190: window_glass_6
-    2300192: window_glass_7
+    2300110: Unit1
+    2300112: Unit2
+    2300114: Unit3
+    2300116: Unit4
+    2300118: Unit5
+    2300120: Unit6
+    2300122: Unit7
+    2300124: Window1
+    2300126: Window10
+    2300128: Window13
+    2300130: Window14
+    2300132: Window15
+    2300134: Window16
+    2300136: Window19
+    2300138: Window2
+    2300140: Window20
+    2300142: Window21
+    2300144: Window22
+    2300146: Window25
+    2300148: Window26
+    2300150: Window3
+    2300152: Window4
+    2300154: Window7
+    2300156: Window8
+    2300158: Window9
+    2300160: window_glass
+    2300162: window_glass_1
+    2300164: window_glass_1_2
+    2300166: window_glass_1_3
+    2300168: window_glass_2
+    2300170: window_glass_3
+    2300172: window_glass_4
+    2300174: window_glass_4_2
+    2300176: window_glass_4_3
+    2300178: window_glass_4_4
+    2300180: window_glass_5
+    2300182: window_glass_5_2
+    2300184: window_glass_5_3
+    2300186: window_glass_5_4
+    2300188: window_glass_6
+    2300190: window_glass_7
     3300000: Building1
     3300002: DivingBoard
     3300004: Floor1
@@ -351,48 +348,47 @@ ModelImporter:
     3300104: Roof5
     3300106: Roof6
     3300108: Roof7
-    3300110: Staircase
-    3300112: Unit1
-    3300114: Unit2
-    3300116: Unit3
-    3300118: Unit4
-    3300120: Unit5
-    3300122: Unit6
-    3300124: Unit7
-    3300126: Window1
-    3300128: Window10
-    3300130: Window13
-    3300132: Window14
-    3300134: Window15
-    3300136: Window16
-    3300138: Window19
-    3300140: Window2
-    3300142: Window20
-    3300144: Window21
-    3300146: Window22
-    3300148: Window25
-    3300150: Window26
-    3300152: Window3
-    3300154: Window4
-    3300156: Window7
-    3300158: Window8
-    3300160: Window9
-    3300162: window_glass
-    3300164: window_glass_1
-    3300166: window_glass_1_2
-    3300168: window_glass_1_3
-    3300170: window_glass_2
-    3300172: window_glass_3
-    3300174: window_glass_4
-    3300176: window_glass_4_2
-    3300178: window_glass_4_3
-    3300180: window_glass_4_4
-    3300182: window_glass_5
-    3300184: window_glass_5_2
-    3300186: window_glass_5_3
-    3300188: window_glass_5_4
-    3300190: window_glass_6
-    3300192: window_glass_7
+    3300110: Unit1
+    3300112: Unit2
+    3300114: Unit3
+    3300116: Unit4
+    3300118: Unit5
+    3300120: Unit6
+    3300122: Unit7
+    3300124: Window1
+    3300126: Window10
+    3300128: Window13
+    3300130: Window14
+    3300132: Window15
+    3300134: Window16
+    3300136: Window19
+    3300138: Window2
+    3300140: Window20
+    3300142: Window21
+    3300144: Window22
+    3300146: Window25
+    3300148: Window26
+    3300150: Window3
+    3300152: Window4
+    3300154: Window7
+    3300156: Window8
+    3300158: Window9
+    3300160: window_glass
+    3300162: window_glass_1
+    3300164: window_glass_1_2
+    3300166: window_glass_1_3
+    3300168: window_glass_2
+    3300170: window_glass_3
+    3300172: window_glass_4
+    3300174: window_glass_4_2
+    3300176: window_glass_4_3
+    3300178: window_glass_4_4
+    3300180: window_glass_5
+    3300182: window_glass_5_2
+    3300184: window_glass_5_3
+    3300186: window_glass_5_4
+    3300188: window_glass_6
+    3300190: window_glass_7
     4300000: Unit7
     4300002: Unit6
     4300004: Roof7
@@ -489,7 +485,6 @@ ModelImporter:
     4300186: Floor1
     4300188: Unit1
     4300190: Unit3
-    4300192: Staircase
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -517,16 +512,16 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    optimizeMeshForGPU: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 20
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
