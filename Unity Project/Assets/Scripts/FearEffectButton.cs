@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 [RequireComponent(typeof(ScaryObject))]
@@ -21,8 +22,12 @@ public class FearEffectButton : MonoBehaviour {
 		{
 			relevantFearEffect.thisEffect.isActive = true;
 			MarkSelected();
-			Debug.Log("BUTTON CLICKED!");
-		}
+			foreach (KeyValuePair<string,ScaryObject.Effect> entry in ScaryObject.fearEffects)
+			{
+				if (entry.Value != relevantFearEffect.thisEffect)
+					entry.Value.isActive = false;
+            }
+        }
 
 	}
 
