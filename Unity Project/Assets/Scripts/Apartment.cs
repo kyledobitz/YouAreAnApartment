@@ -24,7 +24,7 @@ public class Apartment : MonoBehaviour {
 
 	float nextComingUpStairsTime;
 	float endVacancyTime;
-    List<GameObject> residents;
+    public List<GameObject> residents;
 	State state;
 
 	List<GameObject> CreateResidents(){

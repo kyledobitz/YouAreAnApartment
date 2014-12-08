@@ -1992,7 +1992,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ded0eb39e442fa7488c9ca45f088ca06, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ded0eb39e442fa7488c9ca45f088ca06, type: 2}
@@ -2736,7 +2736,7 @@ Transform:
   - {fileID: 1817127229}
   - {fileID: 2090176018}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &351681931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,6 +2776,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &354317074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,7 +3007,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 8a3da064816f7ea48970c0cd4c249502, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a3da064816f7ea48970c0cd4c249502, type: 2}
@@ -3819,7 +3820,7 @@ Transform:
   - {fileID: 2101355497}
   - {fileID: 1871251842}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &513370141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3861,6 +3862,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &518014764
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,13 +3888,13 @@ Transform:
   m_LocalPosition: {x: 18.2000008, y: .800000072, z: 8.1965704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 903310385}
+  - {fileID: 351681930}
+  - {fileID: 1668050627}
+  - {fileID: 1624691946}
+  - {fileID: 513370140}
   - {fileID: 805691169}
   - {fileID: 2116777482}
-  - {fileID: 351681930}
-  - {fileID: 513370140}
-  - {fileID: 1624691946}
-  - {fileID: 903310385}
-  - {fileID: 1668050627}
   m_Father: {fileID: 0}
   m_RootOrder: 12
 --- !u!1 &523676997
@@ -4139,7 +4141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400026, guid: 52b2616214d0f0441b1fab9c9ef0d444, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52b2616214d0f0441b1fab9c9ef0d444, type: 2}
@@ -5573,7 +5575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: a46cc029effb33c49bbc0f2139f2f9d4, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a46cc029effb33c49bbc0f2139f2f9d4, type: 2}
@@ -5884,7 +5886,7 @@ Transform:
   - {fileID: 2004141167}
   - {fileID: 2030584137}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 0
+  m_RootOrder: 5
 --- !u!114 &805691170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5924,6 +5926,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &821135512
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,7 +6608,7 @@ Transform:
   - {fileID: 1767997937}
   - {fileID: 1675717496}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 5
+  m_RootOrder: 0
 --- !u!114 &903310386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6645,6 +6648,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &905782192
 GameObject:
   m_ObjectHideFlags: 0
@@ -11537,7 +11541,7 @@ Transform:
   - {fileID: 1918071315}
   - {fileID: 686749695}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &1624691947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11580,6 +11584,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &1624906147
 GameObject:
   m_ObjectHideFlags: 0
@@ -12140,7 +12145,7 @@ Transform:
   - {fileID: 1633588889}
   - {fileID: 1908423342}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 6
+  m_RootOrder: 2
 --- !u!114 &1668050628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12182,6 +12187,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &1675717495
 GameObject:
   m_ObjectHideFlags: 0
@@ -12898,7 +12904,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 1d0228951b8500043b8e5c8bee032724, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d0228951b8500043b8e5c8bee032724, type: 2}
@@ -13407,7 +13413,7 @@ MonoBehaviour:
   coldPowerThreshold: 0
   lightsPowerThreshold: 0
   devicePowerThreshold: 100
-  apartmentUnlockThreshold: 400
+  apartmentUnlockThreshold: 100
   roofs:
   - {fileID: 2076213040}
   - {fileID: 1699872981}
@@ -13425,13 +13431,13 @@ MonoBehaviour:
   - {fileID: 491104466}
   - {fileID: 145303371}
   apartments:
+  - {fileID: 903310384}
+  - {fileID: 351681929}
+  - {fileID: 1668050626}
+  - {fileID: 1624691945}
+  - {fileID: 513370139}
   - {fileID: 805691168}
   - {fileID: 2116777481}
-  - {fileID: 351681929}
-  - {fileID: 513370139}
-  - {fileID: 1624691945}
-  - {fileID: 903310384}
-  - {fileID: 1668050626}
 --- !u!1 &1779559592
 GameObject:
   m_ObjectHideFlags: 0
@@ -16669,7 +16675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: d25d36a69b8333e4ea54fe14b7dbba48, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: d25d36a69b8333e4ea54fe14b7dbba48, type: 2}
       propertyPath: m_LocalPosition.x
@@ -18078,7 +18084,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: bf1c5e11afe73de4898d52db24c1d199, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf1c5e11afe73de4898d52db24c1d199, type: 2}
@@ -18774,7 +18780,7 @@ Transform:
   - {fileID: 1578059165}
   - {fileID: 94778857}
   m_Father: {fileID: 518014765}
-  m_RootOrder: 1
+  m_RootOrder: 6
 --- !u!114 &2116777483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18814,6 +18820,7 @@ MonoBehaviour:
   maxVacancyTime: 6
   minComingUpStairsTime: 1
   maxComingUpStairsTime: 3
+  residents: []
 --- !u!1 &2123119099
 GameObject:
   m_ObjectHideFlags: 0
