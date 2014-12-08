@@ -5,14 +5,18 @@ using System.Collections;
 public class Meanders : MonoBehaviour {
 
     //public Doorway[] doorways;
-    public Collider currentRoom;
+	public Collider currentRoom;
+	public float frontDoorMagnetism = 10f;
     public float minSpeed = 1f;
     public float maxSpeed = 2f;
     public float standVsMeanderPercent = 0.5f;
     public float minDelayTime = 2f;
     public float maxDelayTime = 5f;
-    public float doorMagnetism = 5f;
+	public float doorMagnetism = 3f;
+	public GameObject[] frontDoorToStairsPath;
 
+	int frontDoorToStairsPathIndex = 0;
+	bool evacuating = false;
 	Animator animator;
     float nextDecisionTime;
     State state = State.STANDING;
@@ -45,11 +49,11 @@ public class Meanders : MonoBehaviour {
 				velocity = Vector3.zero;
                 break;
             case State.MEANDERING:
-                if(IsAtDestination()){
-					state = State.STANDING;
-					velocity = Vector3.zero;
-                }
-                if(Time.time > nextDecisionTime){
+				if(evacuating == true && IsAtFrontDoor()){
+					destination = frontDoorToStairsPath[0].transform.position;
+					state = State.MOVING_OUT;
+				}
+                if(Time.time > nextDecisionTime || IsAtDestination()){
                     nextDecisionTime = getNextDecisionTime();
                     state = DecideNextState();
                 }
@@ -63,26 +67,46 @@ public class Meanders : MonoBehaviour {
 					state = State.MEANDERING;
                 }
                 break;
+			case State.MOVING_OUT:
+				if(IsAtStairs()){
+					Destroy(gameObject);
+				}
+				else if(IsAtDestination()){
+					destination = frontDoorToStairsPath[frontDoorToStairsPathIndex].transform.position;
+					frontDoorToStairsPathIndex++;
+				}
+				break;
         }
 		animator.SetFloat ("Speed", velocity.magnitude);
 
-        // Handle Movements
-        switch (state)
-        {
-            case State.MEANDERING:
-                Move();
-                break;
-            case State.STANDING:
-                break;
-            case State.GOING_TO_DOOR:
-                Move();
-                break;
+		if (state != State.STANDING) {
+			Move();
 		}
+	}
+
+	public void BeginEvacuating(){
+		evacuating = true;
+		state = State.MEANDERING;
+		speed = maxSpeed;
+		minDelayTime = minDelayTime / 2f;
+		maxDelayTime = maxDelayTime / 2f;
+		standVsMeanderPercent = 0f;
+		frontDoorToStairsPathIndex = 0;
+	}
+	
+	bool IsAtStairs(){
+		var stairs = frontDoorToStairsPath [frontDoorToStairsPath.Length - 1];
+		return (transform.position - stairs.transform.position).magnitude < 0.2f;
 	}
 
     bool IsAtDestination(){
         return (transform.position - destination).magnitude < 0.2f;
     }
+
+	bool IsAtFrontDoor(){
+		var frontDoor = frontDoorToStairsPath [0];
+		return (transform.position - frontDoor.transform.position).magnitude < frontDoorMagnetism;
+	}
    
     float getNextDecisionTime(){
         return Time.time + Random.Range (minDelayTime, maxDelayTime);
@@ -136,6 +160,8 @@ public class Meanders : MonoBehaviour {
     public enum State{
         MEANDERING,
         STANDING,
-        GOING_TO_DOOR
+        GOING_TO_DOOR,
+		MOVING_IN,
+		MOVING_OUT,
     }
 }
