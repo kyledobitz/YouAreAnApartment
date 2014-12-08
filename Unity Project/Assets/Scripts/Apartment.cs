@@ -8,6 +8,7 @@ public class Apartment : MonoBehaviour {
 
 	public GameObject[] frontDoorToStairsPath;
 	public Collider[] rooms;
+	public GameObject[] doorways;
 
 	public int maxPeopleNumber;
 	public int minAdultNumber;
@@ -48,6 +49,7 @@ public class Apartment : MonoBehaviour {
 			resident.transform.SetParent(family.transform);
 			Meanders meanderer = (Meanders)resident.GetComponent (typeof(Meanders));
 			meanderer.frontDoorToStairsPath = frontDoorToStairsPath;
+			meanderer.doorways = doorways;
 		}
 		return newResidents;
 	}

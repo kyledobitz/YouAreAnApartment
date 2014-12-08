@@ -5,7 +5,7 @@ using System.Collections;
 public class Meanders : MonoBehaviour
 {
 
-	//public Doorway[] doorways;
+	public GameObject[] doorways;
 	public Collider currentRoom;
 	public float frontDoorMagnetism = 4f;
 	public float minSpeed = 1f;
@@ -151,8 +151,7 @@ public class Meanders : MonoBehaviour
 	Doorway GetNearbyDoor ()
 	{
 		//var doorways = Resources.FindObjectsOfTypeAll(typeof(Doorway));//
-		var doorwayObjects = GameObject.FindGameObjectsWithTag ("Doorway");
-		foreach (GameObject doorwayObject in doorwayObjects) {
+		foreach (GameObject doorwayObject in doorways) {
 			Doorway doorway = doorwayObject.GetComponentInChildren<Doorway> ();
 			if ((transform.position - doorway.transform.position).magnitude < doorMagnetism)
 				return doorway;
