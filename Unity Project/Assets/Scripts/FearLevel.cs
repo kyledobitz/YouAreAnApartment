@@ -38,10 +38,10 @@ public class FearLevel : MonoBehaviour {
             return false;
     }
 
-	public static ScaryObject.Effect cold = new ScaryObject.Effect (0.1f, 100f,0f);
-	public static ScaryObject.Effect lights = new ScaryObject.Effect (10f, 10f,0f);
-	public static ScaryObject.Effect device = new ScaryObject.Effect (10f, 10f,300f);
-	public static ScaryObject.Effect fling = new ScaryObject.Effect (10f, 10f,500f);
+	public static ScaryObject.Effect cold = new ScaryObject.Effect (0.1f, 30f,0f);
+	public static ScaryObject.Effect lights = new ScaryObject.Effect (0.1f, 30f,0f);
+	public static ScaryObject.Effect device = new ScaryObject.Effect (0.1f, 30f,300f);
+	public static ScaryObject.Effect fling = new ScaryObject.Effect (0.1f, 30f,500f);
 	public static ScaryObject.Effect possession = new ScaryObject.Effect (10f, 10f,1000f);
 
 
