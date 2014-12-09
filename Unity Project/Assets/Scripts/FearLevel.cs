@@ -48,7 +48,7 @@ public class FearLevel : MonoBehaviour
 	public static ScaryObject.Effect lights = new ScaryObject.Effect (0.1f, 50f, 0f);
 	public static ScaryObject.Effect device = new ScaryObject.Effect (1.5f, 50f, 300f);
 	public static ScaryObject.Effect fling = new ScaryObject.Effect (0.1f, 30f, 500f);
-	public static ScaryObject.Effect possession = new ScaryObject.Effect (1f, 1000f, 800f);
+	public static ScaryObject.Effect possession = new ScaryObject.Effect (1f, 1000f, 1200f);
 
 	// Use this for initialization
 	void Start ()
@@ -86,6 +86,8 @@ public class FearLevel : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (Input.anyKey)
+			DestroyOnClick.destroyCount += 1;
 		totalFear = CalculateTotalFear ();
 		ChangeLockedApartments ();
 

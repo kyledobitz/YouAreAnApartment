@@ -27,7 +27,7 @@ public class ScaryObject : MonoBehaviour {
     public float effectRadius = 10f; //remove soon
     public Animation scarimation;
     public string fearEffect;
-	public EffectName SpecificFearEffect;
+	public EffectName SpecificFearEffect = EffectName.DEVICE;
 	
 	public bool CHECK_THIS_BOX_FOR_BUTTONS;
 
